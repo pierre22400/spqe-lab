@@ -1,0 +1,63 @@
+---
+title: SpQE Lab
+description: Send a small software specification and receive a tested, documented Python prototype.
+template: splash
+tableOfContents: false
+editUrl: false
+prev: false
+next: false
+---
+
+import {
+  Card,
+  CardGrid,
+  LinkButton
+} from '@astrojs/starlight/components';
+
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="metadata"
+  aria-label="SpQE pipeline from software specification to tested Python prototype"
+>
+  <source
+    src="./media/spqe-pipeline-demo.mp4"
+    type="video/mp4"
+  />
+  Spec → Generate → Run → Test → Repair → Python Prototype
+</video>
+
+**Send a small software specification. Receive a tested, documented Python prototype.**
+
+<CardGrid>
+  <Card title="What you send">
+    A small, bounded software need.
+  </Card>
+
+  <Card title="What SpQE does">
+    Generates, runs, tests and repairs the prototype.
+  </Card>
+
+  <Card title="What you receive">
+    Code, test results, outputs, documentation and known limitations.
+  </Card>
+</CardGrid>
+
+> **4 public experiments**, with specifications, generated code, tests, failures, repairs and documentation.
+
+<div>
+  <LinkButton href="./experiments/noisedoselab/">
+    See the experiments
+  </LinkButton>
+
+  {' '}
+
+  <LinkButton
+    href="./request-kit/"
+    variant="secondary"
+  >
+    Submit a prototype request
+  </LinkButton>
+</div>

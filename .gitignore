@@ -19,3 +19,5 @@ archcode_runs/
 
 .DS_Store
 Thumbs.db
+.env.local
+.env.*.local
