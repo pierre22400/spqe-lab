@@ -15,6 +15,6 @@ They should not be interpreted as an active offer, submission process or invitat
 
 For the active project narrative, use:
 
-- [Comparative benchmarks](../../benchmarks/)
-- [Methods overview](../../methods/)
-- [Why this showcase exists](../../about/why-this-showcase/)
+- [Comparative benchmarks](../benchmarks/)
+- [Methods overview](../methods/)
+- [Why this showcase exists](../about/why-this-showcase/)
