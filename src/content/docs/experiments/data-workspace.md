@@ -31,6 +31,8 @@ The prototype is designed around local filesystem state. It exposes a subcommand
 
 This page documents an SpQE Lab experiment. SpQE Lab is an automatic prototype-generation software system: it starts from a structured specification, generates a working software prototype, produces associated user documentation, and then subjects the result to executable qualification tests.
 
+> **Public redaction note.** Historical internal identifiers and local absolute paths are redacted in this public copy. Functional values, results and counts are unchanged.
+
 Here, the Data Workspace CLI is used as a concrete case study for a broader local-state lifecycle prototype. The page follows the observed runtime behavior: generated CLI, generated user manual, black-box tests, successful workflows, defect detection, documented gaps, and final vitrine verdict.
 
 The complete specification used to frame this prototype is available here:
@@ -84,19 +86,19 @@ Data Workspace CLI (CLI) - natural spec v5
 Local qualification context:
 
 ```text
-C:\Users\Utilisateur\Documents\mSpQE\pytest-5942\test_phase2_preflight_acw_chec0\repo\.SpQE
+<GENERATED_PACKAGE_DIR>
 ```
 
 CLI entry point:
 
 ```text
-C:\Users\Utilisateur\Documents\mSpQE\pytest-5942\test_phase2_preflight_acw_chec0\repo\.SpQE\app\cli.py
+<GENERATED_PACKAGE_DIR>/app/cli.py
 ```
 
 Black-box test battery:
 
 ```text
-C:\Users\Utilisateur\Documents\mSpQE\tests\test_dataworkspace_cli_vitrine.py
+<QUALIFICATION_BATTERY>
 ```
 
 Execution command:
@@ -108,19 +110,19 @@ pytest -s tests/test_dataworkspace_cli_vitrine.py -vv -o log_cli=true --log-cli-
 Evidence directory:
 
 ```text
-C:\Users\Utilisateur\Documents\mSpQE\pytest-5942\test_phase2_preflight_acw_chec0\repo\.SpQE\.SpQE\vitrine_tests\dataworkspace_cli_20260628_085900
+<EVIDENCE_DIR>
 ```
 
 Generated evidence report:
 
 ```text
-C:\Users\Utilisateur\Documents\mSpQE\pytest-5942\test_phase2_preflight_acw_chec0\repo\.SpQE\.SpQE\vitrine_tests\dataworkspace_cli_20260628_085900\dataworkspace_vitrine_test_report.md
+<EVIDENCE_DIR>/dataworkspace_vitrine_test_report.md
 ```
 
 Generated machine-readable results:
 
 ```text
-C:\Users\Utilisateur\Documents\mSpQE\pytest-5942\test_phase2_preflight_acw_chec0\repo\.SpQE\.SpQE\vitrine_tests\dataworkspace_cli_20260628_085900\dataworkspace_vitrine_test_results.json
+<EVIDENCE_DIR>/dataworkspace_vitrine_test_results.json
 ```
 
 ## 2. Purpose of the qualification
@@ -877,7 +879,7 @@ The vitrine-level result is:
 0 hard failures
 ```
 
-This makes the prototype suitable for inclusion as a documented SpQE Lab Lab experiment, provided the page presents it honestly as a prototype with known gaps rather than a fully qualified production-equivalent tool.
+This makes the prototype suitable for inclusion as a documented SpQE Lab experiment, provided the page presents it honestly as a prototype with known gaps rather than a fully qualified production-equivalent tool.
 
 ### The evidence is reusable
 
@@ -971,7 +973,7 @@ Final verdict:
 VERDICT: PASS WITH DOCUMENTED GAPS
 ```
 
-The prototype is suitable for inclusion in the SpQE Lab Lab showcase as a transparent demonstration of generated software, executable qualification, and documented defect discovery.
+The prototype is suitable for inclusion in the SpQE Lab showcase as a transparent demonstration of generated software, executable qualification, and documented defect discovery.
 
 It should be presented as a strong prototype with known, reproducible limitations rather than as a fully qualified zero-gap prototype.
 
