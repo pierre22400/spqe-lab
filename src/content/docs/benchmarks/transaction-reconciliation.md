@@ -33,7 +33,3 @@ A deterministic Python CLI reconciles two CSV transaction ledgers. It validates 
 
 The result does not show first-pass equivalence: Kiro was substantially faster and more robust initially. It does show that SpQE’s remaining faults were local and diagnosable, while the business logic and public CLI surface were sufficiently present for full qualification after two repairs.
 
-## Evidence
-
-- [Benchmark overview](../)
-- Specification, black-box battery, raw results, generated source and repair trace: publication package in preparation.
