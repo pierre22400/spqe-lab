@@ -32,7 +32,3 @@ NoiseDoseLab is the most demanding benchmark in the series because it combines s
 
 The existing [NoiseDoseLab experiment](../../experiments/noisedoselab/) documents a separate qualified SpQE run and remains available as historical evidence. It must not be conflated with this Kiro comparison.
 
-## Evidence
-
-- [Benchmark overview](../)
-- Specification, black-box battery, raw results, generated source and repair trace: publication package in preparation.
