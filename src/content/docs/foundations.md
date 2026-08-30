@@ -17,7 +17,7 @@ the original French text and an American English translation.
 
 ## SpQE Lab et l’anthropologie du code.
 
-Il existe une intuition rare, presque contre-intuitive, à l’origine d’SpQE Lab : le code n’est pas seulement une construction technique. Il peut aussi être observé comme un milieu, un ensemble de règles, de relations, de tensions, de régulations et de compromis. Autrement dit, il peut être approché comme un objet d’anthropologie.
+Il existe une intuition rare, presque contre-intuitive, à l’origine de SpQE Lab : le code n’est pas seulement une construction technique. Il peut aussi être observé comme un milieu, un ensemble de règles, de relations, de tensions, de régulations et de compromis. Autrement dit, il peut être approché comme un objet d’anthropologie.
 
 Cette intuition ne vient pas d’une formation classique d’ingénieur logiciel. Elle vient d’un autre terrain : la médecine du travail. Car le médecin du travail passe une partie de sa vie à entrer dans des organisations humaines, à observer leur fonctionnement réel, à écouter leurs discours officiels, à repérer leurs zones de friction, leurs mécanismes de défense, leurs blessures visibles et invisibles. Il ne regarde pas seulement les personnes. Il regarde les systèmes.
 
@@ -123,11 +123,11 @@ Le but n’est donc pas simplement de produire du code sans bug par magie. Le bu
 
 En ce sens, SpQE ne supprime pas seulement des bugs. Il documente la transformation d’un artisanat logiciel vers une manufacture logicielle contrôlée.
 
-## DCG2 : une cartographie anthropologique miniature
+## Une cartographie anthropologique miniature
 
-Dans cette lecture, un dispositif comme DCG2 peut être compris comme bien plus qu’un outil technique. Il fonctionne comme une carte condensée des relations significatives entre unités de code. Il ne prétend pas tout montrer. Il isole ce qui importe pour la stabilité du système : qui fournit quoi, selon quel contrat, pour quels voisins.
+Dans cette lecture, une cartographie relationnelle compacte peut être comprise comme bien plus qu’un outil technique. Elle condense les relations significatives entre unités de code. Elle ne prétend pas tout montrer. Elle isole ce qui importe pour la stabilité du système : qui fournit quoi, selon quel contrat, pour quels voisins.
 
-Cette économie de représentation est précisément ce que l’on retrouve dans les bonnes cartes anthropologiques. Elles ne recensent pas chaque geste de chaque individu. Elles cherchent la structure. Elles montrent les lignes de force, les relations déterminantes, les points de passage, les dépendances essentielles. En cela, DCG2 relève presque d’une anthropologie structurale appliquée au logiciel.
+Cette économie de représentation est précisément ce que l’on retrouve dans les bonnes cartes anthropologiques. Elles ne recensent pas chaque geste de chaque individu. Elles cherchent la structure. Elles montrent les lignes de force, les relations déterminantes, les points de passage, les dépendances essentielles. En cela, ce type de carte relève presque d’une anthropologie structurale appliquée au logiciel.
 
 Ce n’est pas un callgraph total. C’est une capsule de relations. Et c’est peut-être pour cela qu’il devient si utile : il ne noie pas l’observateur sous la masse des détails, il l’aide à voir l’organisation réelle.
 
@@ -137,7 +137,7 @@ Le rapprochement devient alors presque inévitable. Le médecin du travail inter
 
 Cette analogie n’est pas un simple effet de style. Elle éclaire l’origine même du projet. Un créateur formé à observer les entreprises comme des milieux humains complexes a pu reconnaître dans le code généré à grande échelle un autre type de milieu complexe, lui aussi traversé par des règles, des interactions, des écarts et des crises. Là où d’autres auraient vu un problème purement technique, il a vu un terrain d’observation, de diagnostic et de régulation.
 
-Voilà peut-être l’une des singularités profondes d’SpQE Lab : il n’est pas seulement né d’une ambition logicielle. Il est né d’un regard. Un regard forgé dans l’observation des organisations humaines, puis transposé vers les organisations de code.
+Voilà peut-être l’une des singularités profondes de SpQE Lab : il n’est pas seulement né d’une ambition logicielle. Il est né d’un regard. Un regard forgé dans l’observation des organisations humaines, puis transposé vers les organisations de code.
 
 ## Conclusion
 
@@ -304,10 +304,10 @@ The goal, then, is not simply to produce bug-free code by magic. The goal is to 
 
 In this sense, SpQE Lab does not merely remove bugs. It documents the transformation from software craft toward controlled software manufacturing.
 
-## DCG2: A Miniature Anthropological Map
+## A Miniature Anthropological Map
 
-In this reading, a device such as DCG2 can be understood as far more than a technical tool.
-It functions as a condensed map of meaningful relationships between units of code.
+In this reading, a compact relational map can be understood as far more than a technical tool.
+It condenses the meaningful relationships between units of code.
 It does not claim to show everything.
 It isolates what matters for the stability of the system:
 who provides what, under which contract, and for which neighbors.
@@ -316,7 +316,7 @@ This economy of representation is precisely what we find in good anthropological
 They do not record every gesture of every individual.
 They search for structure.
 They show lines of force, decisive relationships, passage points, and essential dependencies.
-In this sense, DCG2 almost belongs to structural anthropology applied to software.
+In this sense, this kind of map almost belongs to structural anthropology applied to software.
 
 It is not a total call graph.
 It is a capsule of relationships.
