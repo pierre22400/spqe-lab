@@ -50,7 +50,9 @@ Blender API Capsule Extractor is a deterministic local command-line prototype fo
 
 It is intentionally narrow. It does not execute Blender, does not require the Blender runtime, does not access the network, and does not attempt to become a general-purpose Blender documentation crawler. Its first target is the Blender backend implementation of `relationships.py`.
 
-This page documents an SPQE Lab experiment. The Lab pipeline generated the prototype, produced a user manual, and then subjected the result to executable black-box qualification.
+This page documents a SpQE Lab experiment. The Lab pipeline generated the prototype, produced a user manual, and then subjected the result to executable black-box qualification.
+
+> **Public redaction note.** Historical internal identifiers and local absolute paths are redacted in this public copy. Functional values, results and counts are unchanged.
 
 The experiment is relevant to the broader **SPQE 3D** roadmap, but the qualified artifact is more specific: it is a Blender backend documentation extractor. SPQE 3D is the scene-generation layer; Blender is only the first backend target.
 
@@ -105,26 +107,26 @@ Blender API Capsule Extractor — First Backend for SpQE 3D
 Local qualification context:
 
 ```text
-/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE
+<GENERATED_PACKAGE_DIR>
 ```
 
 CLI entry point:
 
 ```text
-/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/app/cli.py
+<GENERATED_PACKAGE_DIR>/app/cli.py
 ```
 
 Blender API HTML root:
 
 ```text
-/content/blender_python_reference_5_1_unzipped/blender_python_reference_5_1
+<BLENDER_API_HTML_ROOT>
 ```
 ## Target documentation corpus
 
 The extractor was qualified against the following local Blender Python API HTML documentation tree:
 
 ```text
-/content/blender_python_reference_5_1_unzipped/blender_python_reference_5_1
+<BLENDER_API_HTML_ROOT>
 ```
 
 This target corpus was not an abstract or hidden source. It was a concrete local documentation tree with measurable size and structure.
@@ -152,14 +154,14 @@ This inventory matters for qualification. The preflight established that the doc
 Black-box report:
 
 ```text
-/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/blackbox_vitrine_tests/blender_api_extractor_blackbox_report.json
+<GENERATED_PACKAGE_DIR>/blackbox_vitrine_tests/blender_api_extractor_blackbox_report.json
 ```
 
 Generated capsule artifacts:
 
 ```text
-/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.json
-/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.txt
+<GENERATED_PACKAGE_DIR>/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.json
+<GENERATED_PACKAGE_DIR>/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.txt
 ```
 
 ## 2. Purpose of the qualification
@@ -342,7 +344,7 @@ Corrected behavior:
 inspect --strict succeeds for Object, Collection and ID
 build --strict produces canonical JSON and readable text artifacts
 sections use id/entries
-schema_version is SpQE_blender_doc_capsule.v1
+schema_version is <HISTORICAL_CAPSULE_SCHEMA_V1>
 critical Blender API members are present
 text output uses readable BEGIN_SECTION blocks
 ```
@@ -433,19 +435,19 @@ The strict build workflow produced both expected artifacts.
 JSON capsule:
 
 ```text
-/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.json
+<GENERATED_PACKAGE_DIR>/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.json
 ```
 
 Text capsule:
 
 ```text
-/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.txt
+<GENERATED_PACKAGE_DIR>/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.txt
 ```
 
 Validated JSON properties:
 
 ```text
-schema_version = SpQE_blender_doc_capsule.v1
+schema_version = <HISTORICAL_CAPSULE_SCHEMA_V1>
 official_api_symbols_count = 3
 official_member_count = 31
 ```
@@ -453,7 +455,7 @@ official_member_count = 31
 Validated capsule sections:
 
 ```text
-SpQE_ownership
+<HISTORICAL_OWNERSHIP_KEY>
 assignment_patterns
 creation_patterns
 forbidden_elements
