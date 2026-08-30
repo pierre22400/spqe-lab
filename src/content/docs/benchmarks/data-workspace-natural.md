@@ -95,7 +95,3 @@ The existing [Data Workspace CLI experiment](../../experiments/data-workspace/) 
 
 It documents a different development stage and must not be interpreted as the first-shot comparative benchmark reported here.
 
-## Evidence
-
-- [Benchmark overview](../)
-
