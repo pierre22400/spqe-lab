@@ -13,23 +13,27 @@ A local data-workspace CLI manages workspaces, sources, transforms, runs, report
 | Measure | Kiro | SpQE |
 | --- | ---: | ---: |
 | Generation time | 8m12 | 9m40 |
-| First result | Local defect identified | Local defect identified |
-| Final black-box score | 223 / 235 | **179 / 179** |
-| SpQE targeted local repairs | — | 2 |
+| Shared black-box battery | 179 controls | 179 controls |
+| Recorded result | 158 / 179 | **179 / 179** |
+| Failed controls | 21 | 0 |
+| Scenarios in failure | 11 | 0 |
+| Targeted local repairs before recorded result | 0 | 2 |
 
 ## Generation → qualification → repair
 
 **Generation.** Both systems received the same natural-language specification for a multi-command data-workspace CLI.
 
-**Initial qualification.** Each generated program presented a local, observable defect. The benchmark therefore did not treat a first run as the final result.
+**Shared qualification.** The Kiro CLI was exercised through the same 53-command, 179-control black-box battery used for the SpQE comparison. The captured Kiro run passed **158 / 179** controls and reported **21 failed controls across 11 scenarios**. The failures included parser-diagnostic contract mismatches and a report-export defect involving the missing `output_format` argument.
 
-**Local repair.** Two targeted repairs were applied from the black-box failure evidence rather than performing a full regeneration. This public summary does not characterize the repair step as fully autonomous.
+**Local repair.** Two targeted repairs were applied to the SpQE prototype from black-box failure evidence rather than performing a full regeneration. This public summary does not characterize the repair step as fully autonomous. No equivalent Kiro repair cycle is included in the captured run.
 
-**Final result.** SpQE reached **179 / 179** executable controls. Kiro reached **223 / 235** controls in the recorded qualification battery.
+**Recorded result.** SpQE reached **179 / 179 after two targeted repairs**. Kiro reached **158 / 179 without a repair cycle** on the same battery.
 
 ## Takeaway
 
-This benchmark matters because it stresses module interaction rather than an isolated calculation. SpQE could close its cross-module defects through a short repair loop and reach complete qualification on its test battery. It is not evidence of a general victory over Kiro: the test batteries and final totals differ, and the Kiro result retains the larger control surface.
+This is now a direct same-battery comparison, but not a first-shot-versus-first-shot comparison: the published SpQE result follows two targeted repairs, whereas the captured Kiro result is uncorrected. The result demonstrates that the repaired SpQE prototype closes the shared executable contract completely. It does not establish that SpQE is more robust at first generation.
+
+An earlier Kiro campaign recorded **223 / 235** under a different qualification battery. That historical score is not used as the comparative result on this page.
 
 ## Related historical experiment
 
@@ -38,4 +42,4 @@ The existing [Data Workspace CLI experiment](../../experiments/data-workspace/) 
 ## Evidence
 
 - [Benchmark overview](../)
-- Specification, black-box battery, raw results, generated source and repair trace: publication package in preparation.
+- Shared 179-control battery, raw machine-readable results, generated sources and repair trace: publication package in preparation.
