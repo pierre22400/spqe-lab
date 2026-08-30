@@ -10,7 +10,7 @@ SpQE means **Specification-to-Prototype Qualification Engine** and is pronounced
 
 Users should first read a minimal but complete Prototype SpecBlock example, then read the best practices for building a SpecBlock. These two documents help turn a vague prototype idea into a concrete, structured, and testable request.
 
-The user then completes two documents: the **SpQE Prototype Request Form** and the **SpQE Contact Dossier Form**. Both forms should be sent through the SpQE contact or intake channel at `contact@spqe.yahoo.fr`.
+The user then completes two documents: the **SpQE Prototype Request Form** and the **SpQE Contact Dossier Form**. Both forms should be sent through the SpQE contact or intake channel at `contact.spqe.lab@gmail.com`.
 
 During the current non-commercial showcase phase, SpQE may offer one prototype generation-and-test run free of charge per company or legal entity, subject to review, feasibility, and intake capacity.
 
