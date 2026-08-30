@@ -10,30 +10,36 @@ sidebar:
 
 This series compares **SpQE** and **Kiro** on three independently generated Python command-line programs.
 
-The purpose is not subjective code review. For each benchmark, both systems received the same functional target and were assessed through executable black-box qualification against observable behaviour. The recorded batteries were not always identical between systems, so scores with different denominators must not be read as a shared-test leaderboard. Results distinguish:
-
-- first-generation behaviour;
-- targeted local repair work performed after qualification;
-- final executable result where a repair cycle was completed.
-
-The pages below publish the recorded result summaries. The underlying specifications, batteries, raw results, generated sources and repair traces are still being prepared for publication.
+The purpose is not subjective code review. Each result comes from executable black-box controls over observable behaviour. The table distinguishes first-generation evidence from any later repair result; scores with different denominators are not aggregated.
 
 ## Overall result
 
-Kiro is currently the more robust system at first generation. SpQE nevertheless repeatedly generates the underlying business logic and, after a small number of local repairs, can reach complete executable qualification.
+Across the three first-generation observations, **Kiro is currently the more robust system**.
 
-Across the three experiments, the dominant SpQE failure mode is **cross-module contract closure**: local modules and business rules are present, but their command-line, data, or integration contracts do not fully converge on the first generation.
+SpQE still generates substantial domain logic and public behaviour, but its first-shot failures are more often caused by cross-module contract mismatches. An early mismatch can also prevent downstream controls from being reached, as shown by Data Workspace.
 
-| Benchmark | Generation time | Recorded executable result | SpQE repair status |
+The remaining SpQE engineering problem is therefore identifiable and measurable: improve first-shot semantic consistency between generated modules while preserving executable qualification and targeted repair.
+
+| Benchmark | Generation time | First-generation evidence | Repair outcome in this series |
 | --- | --- | --- | --- |
-| [Transaction Reconciliation](./transaction-reconciliation/) | Kiro <3 min · SpQE 14 min | Kiro 111/112 · SpQE 93/112* | **112/112** after 2 targeted repairs |
-| [Data Workspace natural](./data-workspace-natural/) | Kiro 8m12 · SpQE 9m40 | Kiro 158/179 (uncorrected) · SpQE **179/179** after repair | Shared 179-control battery; 2 SpQE repairs, no Kiro repair captured |
-| [NoiseDoseLab](./noisedoselab/) | Kiro 8 min · SpQE **6 min** | Kiro **251/254** · SpQE 215/250 | No comparative repair cycle recorded |
+| [Transaction Reconciliation](./transaction-reconciliation/) | Kiro <3 min · SpQE 14 min | Kiro 111/112 · SpQE 93/112* | SpQE **112/112** after 2 targeted repairs |
+| [Data Workspace natural](./data-workspace-natural/) | Kiro 8m12 · SpQE 9m40 | Kiro 158/179 · SpQE 120 passes among 152 evaluated; 27 not reached | None; both prototypes remain first-shot |
+| [NoiseDoseLab](./noisedoselab/) | Kiro 8 min · SpQE **6 min** | Kiro 251/254 · SpQE 215/250 | None |
 
-\* Score recorded after removal of one blocking micro-defect, before the two targeted local corrections that completed qualification.
+\* SpQE score recorded after removal of one blocking micro-defect and before the two targeted repairs reported in the final column.
 
-## Methodological note
+## How to read the numbers
 
-The benchmark is deliberately limited to executable controls. It does not claim that either system is universally superior. Within each benchmark, the functional target is shared; where qualification batteries or denominators differ, the scores document separate run trajectories rather than a direct common-test comparison.
+- A failed control is an observation, not necessarily an independent root defect.
+- A control not reached is neither a pass nor a failure.
+- Data Workspace uses the same 179-control design, but the SpQE run reached only 152 controls because an early workspace integration defect blocked downstream scenarios.
+- NoiseDoseLab uses different recorded denominators, so its scores describe separate executable trajectories rather than a common-test ranking.
+- Only Transaction Reconciliation includes a completed repair cycle in this comparative series.
 
-SpQE remains an experimental and minimally optimized pipeline. The current evidence supports a concrete engineering hypothesis: improve first-shot semantic consistency between modules while preserving the demonstrated generation, black-box qualification, and local-repair loop.
+## Current research direction
+
+The evidence does not support a claim that SpQE beats Kiro at first generation. It supports a more useful engineering conclusion: SpQE already exposes a measurable generation–qualification–repair trajectory, and its dominant first-shot weakness is contract closure rather than an absence of underlying domain logic.
+
+The next relevant experiment is to run the same pipeline with another coding-model backend, including a Mistral model, and measure the effect on consistency, cost and repair effort.
+
+The underlying specifications, test batteries, raw results, generated sources and repair traces are being prepared for publication.
