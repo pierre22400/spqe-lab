@@ -6,7 +6,7 @@ sidebar:
   order: 99
 ---
 
-
+> **Public redaction note.** This historical SpecBlock contains neutral placeholders for internal schema names, metadata keys and helper prefixes. They are redactions, not renamed runtime identifiers; functional values and constraints are otherwise preserved.
 
 ```json
 {
@@ -97,7 +97,7 @@ sidebar:
 "bad_arguments": "Return 2 and write at least one short stderr line."
 },
 "success_behavior": {
-"json_output": "Write a JSON capsule conforming to SpQE_blender_doc_capsule.v1.",
+"json_output": "Write a JSON capsule conforming to <HISTORICAL_CAPSULE_SCHEMA_V1>.",
 "text_output": "Write a bounded ACW-readable text capsule delimited by BEGIN_BLENDER_DOC_CAPSULE and END_BLENDER_DOC_CAPSULE.",
 "source_docs": "Never modify source documentation files.",
 "strict_build_quality": "In strict mode, required pages, required symbols, critical members, and non-empty required capsule sections must be validated."
@@ -145,7 +145,7 @@ sidebar:
 "notes": "Flat CLI with direct subcommands. build is the main command; inspect is a local diagnostic tool. no-args and help must return 0."
 },
 "domain_contracts": {
-"schema_version": "SpQE_3d_blender_backend_capsule_domain.v1",
+"schema_version": "<HISTORICAL_BACKEND_DOMAIN_SCHEMA_V1>",
 "family_alignment": {
 "expected_family": "local_document_extractor_lifecycle",
 "family_role": "Local document extractor prototype: explicit HTML root, symbol page resolution, HTML hydration, documentary extraction, JSON/TXT artifacts.",
@@ -156,7 +156,7 @@ sidebar:
 "S091 verifies the generic local document extractor lifecycle, not product-specific Blender relationships.py sections."
 ]
 },
-"SpQE_3d_positioning": {
+"<HISTORICAL_POSITIONING_KEY>": {
 "product_role": "First backend documentation capsule extractor for SpQE 3D.",
 "backend": "Blender",
 "backend_capsule_role": "Declarative backend knowledge injected into ACW.",
@@ -166,7 +166,7 @@ sidebar:
 "design_note": "ACW uses the backend capsule to project SpQE 3D scene abstractions into backend-specific Python code. Blender-specific knowledge must appear late and only in the backend capsule layer."
 },
 "target_document_preflight": {
-"schema_version": "SpQE_3d_backend_doc_preflight.v1",
+"schema_version": "<HISTORICAL_BACKEND_PREFLIGHT_SCHEMA_V1>",
 "generated_utc": "2026-06-29T07:31:49.775585+00:00",
 "backend": "Blender",
 "documentation_kind": "Blender Python API HTML",
@@ -239,11 +239,11 @@ sidebar:
 "world anchor"
 ],
 "hidden_SpQE_helper_interfaces": [
-".SpQE_interface_ground",
-".SpQE_interface_tabletop",
-".SpQE_interface_wall",
-".SpQE_interface_sky",
-".SpQE_anchor_*"
+"<HISTORICAL_HELPER_PREFIX>interface_ground",
+"<HISTORICAL_HELPER_PREFIX>interface_tabletop",
+"<HISTORICAL_HELPER_PREFIX>interface_wall",
+"<HISTORICAL_HELPER_PREFIX>interface_sky",
+"<HISTORICAL_HELPER_PREFIX>anchor_*"
 ],
 "frame_and_bbox_concepts": [
 "object declaration frame",
@@ -272,7 +272,7 @@ sidebar:
 "relationships.py must not own render settings.",
 "relationships.py must not perform final rendering.",
 "relationships.py must not parse CLI arguments.",
-"relationships.py may create or update invisible helper objects only when namespaced with .SpQE_*."
+"relationships.py may create or update invisible helper objects only when namespaced with <HISTORICAL_HELPER_PREFIX>*."
 ],
 "human_construction_paradigm": [
 "Start from anchors, planes, relative positions, support surfaces, alignments, containment, and local frames.",
@@ -435,7 +435,7 @@ sidebar:
 "ownership": {
 "owns": [
 "semantic spatial relation normalization",
-"hidden .SpQE_* interface helpers",
+"hidden <HISTORICAL_HELPER_PREFIX>* interface helpers",
 "object-to-object relationship constraints",
 "local homogeneous spatial clusters",
 "parenting, grouping, visibility, and custom-property metadata needed by the solver",
@@ -456,7 +456,7 @@ sidebar:
 "Create solver helper empties or meshless anchors with bpy.data.objects.new(name, None).",
 "Link helper objects explicitly into an SpQE-owned collection.",
 "Create or reuse an SpQE collection before linking generated helper objects.",
-"Assign a stable .SpQE_ prefix to internal helper data-blocks.",
+"Assign a stable <HISTORICAL_HELPER_PREFIX> prefix to internal helper data-blocks.",
 "Attach custom properties such as relation kind, source object, target object, interface id, and solver stage to helper IDs."
 ],
 "assignment_patterns": [
@@ -478,7 +478,7 @@ sidebar:
 ],
 "safety_rules": [
 "Represent spatial intent through deterministic relation records before applying final numeric transforms.",
-"Create hidden helper objects or helper collections with a .SpQE_ prefix when solver interfaces, contact planes, rails, or local frames must exist in the Blender scene.",
+"Create hidden helper objects or helper collections with a <HISTORICAL_HELPER_PREFIX> prefix when solver interfaces, contact planes, rails, or local frames must exist in the Blender scene.",
 "Keep helper data-blocks invisible to normal renders when they are implementation scaffolding rather than user assets.",
 "Store relationship provenance and solver metadata in ID custom properties.",
 "Use collections to group generated assets, relationship helpers, and local interface families without taking ownership of unrelated scene data.",
@@ -488,14 +488,14 @@ sidebar:
 ]
 },
 "canonical_capsule_template": {
-"schema_version": "SpQE_blender_doc_capsule.v1",
+"schema_version": "<HISTORICAL_CAPSULE_SCHEMA_V1>",
 "target_backend": "Blender",
 "target_module": "relationships.py",
 "source_kind": "official_blender_python_api_html",
 "capsule_scope": "MVP spatial relationships, hidden interface helpers, relative transforms, object membership, visibility, metadata, and solver-relevant Blender API members.",
 "s091_family_scope_note": "Product contract for relationships.py only. Do not promote these product sections into generic S091 obligations.",
 "sections": {
-"SpQE_ownership": [],
+"<HISTORICAL_OWNERSHIP_KEY>": [],
 "assignment_patterns": [],
 "creation_patterns": [],
 "forbidden_elements": [],
@@ -527,10 +527,10 @@ sidebar:
 "child.matrix_parent_inverse = anchor.matrix_world.inverted()"
 ],
 "assign_relationship_metadata": [
-  "helper[\"SpQE_kind\"] = \"relationship\"",
-  "helper[\"SpQE_relationship_id\"] = relationship_id",
-  "helper[\"SpQE_anchor_id\"] = anchor_id",
-  "helper[\"SpQE_relation_type\"] = relation_type"
+  "helper[\"<HISTORICAL_METADATA_PREFIX>kind\"] = \"relationship\"",
+  "helper[\"<HISTORICAL_METADATA_PREFIX>relationship_id\"] = relationship_id",
+  "helper[\"<HISTORICAL_METADATA_PREFIX>anchor_id\"] = anchor_id",
+  "helper[\"<HISTORICAL_METADATA_PREFIX>relation_type\"] = relation_type"
 ],
 "minimal_acw_intent": [
 "Create deterministic relationship helpers by name.",
@@ -541,7 +541,7 @@ sidebar:
 ],
 "product_quality_contract": {
 "required_capsule_sections": [
-"SpQE_ownership",
+"<HISTORICAL_OWNERSHIP_KEY>",
 "assignment_patterns",
 "creation_patterns",
 "forbidden_elements",
@@ -550,7 +550,7 @@ sidebar:
 "safety_rules"
 ],
 "non_empty_sections_in_strict_mode": [
-"SpQE_ownership",
+"<HISTORICAL_OWNERSHIP_KEY>",
 "assignment_patterns",
 "creation_patterns",
 "forbidden_elements",
@@ -617,14 +617,14 @@ sidebar:
 "Extract selected relationship-relevant members before truncation.",
 "Prioritize target members in the order defined by the profile or preflight contract.",
 "Remove navigation and global index noise.",
-"Preserve wildcards such as .SpQE_* and bpy.ops.* in textual patterns."
+"Preserve wildcards such as <HISTORICAL_HELPER_PREFIX>* and bpy.ops.* in textual patterns."
 ],
 "capsule": [
 "Top-level schema_version must be a string.",
 "metadata and sections must be top-level.",
 "official_api_symbols must contain exactly one entry per required logical symbol.",
 "official_api_symbols entries should include compact members when extracted.",
-"SpQE_ownership, assignment_patterns, creation_patterns, forbidden_elements, and safety_rules must not be empty in strict mode.",
+"<HISTORICAL_OWNERSHIP_KEY>, assignment_patterns, creation_patterns, forbidden_elements, and safety_rules must not be empty in strict mode.",
 "Product sections must not become generic S091 obligations."
 ],
 "rendering": [
@@ -647,7 +647,7 @@ sidebar:
   "Keep Windows/POSIX path compatibility.",
   "Avoid POSIX-only APIs.",
   "Never use bpy.ops.* as the normal deterministic solve path.",
-  "Never let markdown or wildcard cleaning strip '*' from .SpQE_anchor_* or bpy.ops.*.",
+  "Never let markdown or wildcard cleaning strip '*' from <HISTORICAL_HELPER_PREFIX>anchor_* or bpy.ops.*.",
   "Do not introduce top-level specblock fields outside the established compact specblock structure."
 ]
 }
