@@ -1,6 +1,6 @@
 
 
-.archcode-soft-panel {
+.SpQE-soft-panel {
   background: #f7f7f8;
   border: 1px solid #e5e7eb;
   border-radius: 0.75rem;
@@ -8,11 +8,27 @@
   margin: 1.5rem 0;
 }
 
-.archcode-soft-panel > :first-child {
+.SpQE-soft-panel > :first-child {
   margin-top: 0;
 }
 
-.archcode-soft-panel > :last-child {
+.SpQE-soft-panel > :last-child {
   margin-bottom: 0;
 }
 
+
+.SpQE-diagram-figure {
+  margin: 1.5rem 0 2rem;
+}
+
+.SpQE-diagram-figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.SpQE-diagram-figure figcaption {
+  margin-top: 0.6rem;
+  color: var(--sl-color-gray-3);
+  font-size: var(--sl-text-sm);
+}
