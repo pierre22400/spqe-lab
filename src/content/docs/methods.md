@@ -9,7 +9,7 @@ SpQE Lab explores how AI systems can generate, audit, repair and document softwa
 
 <figure class="SpQE-diagram-figure">
   <img
-    src="/spqe-lab/images/methods/SpQE-generation-loop.svg"
+    src="/spqe-lab/images/methods/archcode-generation-loop.svg"
     alt="SpQE prototype generation loop from SpecBlock to qualification"
   >
   <figcaption>
