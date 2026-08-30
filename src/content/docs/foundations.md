@@ -27,7 +27,7 @@ C’est ce regard qui peut être transposé au logiciel. Dans une entreprise, le
 
 Le médecin du travail n’intervient pas seulement pour constater un fait médical. Il observe une scène complète. Il perçoit l’écart entre le discours de bienveillance et les pratiques réelles, entre l’organigramme officiel et les rapports de pouvoir concrets, entre la procédure écrite et le vécu des salariés. Il fait, en pratique, une anthropologie du travail.
 
-Avec ArchCode, un geste analogue apparaît dans le champ logiciel. Il ne s’agit plus seulement d’écrire du code ou de générer des fichiers. Il s’agit d’observer comment un ensemble de modules peut tenir, converger, coopérer, se contredire, se réparer ou s’effondrer. Le regard devient structurel. Le code cesse d’être un simple texte. Il devient un milieu habité par des règles, des contraintes, des interfaces, des dépendances et des pathologies.
+Avec SpQE, un geste analogue apparaît dans le champ logiciel. Il ne s’agit plus seulement d’écrire du code ou de générer des fichiers. Il s’agit d’observer comment un ensemble de modules peut tenir, converger, coopérer, se contredire, se réparer ou s’effondrer. Le regard devient structurel. Le code cesse d’être un simple texte. Il devient un milieu habité par des règles, des contraintes, des interfaces, des dépendances et des pathologies.
 
 Dans cette perspective, une erreur n’est plus un simple accident local. Elle devient un symptôme. Un mismatch d’interface, un import cassé, une incohérence de signature, une aide CLI instable ou un test qui dérive révèlent non seulement un défaut, mais une vérité sur l’organisation du système. Comme dans l’entreprise, la défaillance montre ce que la façade ne disait pas.
 
@@ -100,7 +100,7 @@ Ce cycle n’est pas une anomalie. Il appartient à l’histoire générale des 
 
 Le logiciel, malgré son apparence abstraite, n’échappe pas à cette condition. Il conserve quelque chose d’artisanal. Chaque prototype est encore, en partie, une pièce d’atelier : on l’assemble, on l’éprouve, on écoute ses craquements, on repère ses points faibles, puis on le reprend.
 
-ARCHCode ne nie pas cette réalité. Au contraire, il la rend explicite.
+SpQE ne nie pas cette réalité. Au contraire, il la rend explicite.
 
 Il ne prétend pas que tout prototype doit naître parfait. Il organise la trajectoire par laquelle un prototype devient plus fiable :
 
@@ -117,11 +117,11 @@ C’est précisément ce déplacement qui est important. Le bug cesse d’être 
 
 On pourrait dire que le bug est la signature historique d’un mode de production encore artisanal du logiciel. Il témoigne d’un âge où la fabrication reste exploratoire, hésitante, parfois bégayante, mais déjà capable de se réguler.
 
-ARCHCode se situe peut-être à un point de bascule. Il appartient encore à cet âge artisanal, puisqu’il observe les bugs, les accepte comme symptômes, et les corrige par cycles successifs. Mais il prépare aussi autre chose : une manufacture logicielle plus contrôlée, dans laquelle la validation, le diagnostic et la réparation sont intégrés dès la génération.
+SpQE se situe peut-être à un point de bascule. Il appartient encore à cet âge artisanal, puisqu’il observe les bugs, les accepte comme symptômes, et les corrige par cycles successifs. Mais il prépare aussi autre chose : une manufacture logicielle plus contrôlée, dans laquelle la validation, le diagnostic et la réparation sont intégrés dès la génération.
 
 Le but n’est donc pas simplement de produire du code sans bug par magie. Le but est de faire évoluer la fabrication logicielle vers une convergence plus immédiate, plus observable et plus gouvernée.
 
-En ce sens, ARCHCode ne supprime pas seulement des bugs. Il documente la transformation d’un artisanat logiciel vers une manufacture logicielle contrôlée.
+En ce sens, SpQE ne supprime pas seulement des bugs. Il documente la transformation d’un artisanat logiciel vers une manufacture logicielle contrôlée.
 
 ## DCG2 : une cartographie anthropologique miniature
 
@@ -133,7 +133,7 @@ Ce n’est pas un callgraph total. C’est une capsule de relations. Et c’est 
 
 ## Une idée neuve : du médecin du travail au médecin du code
 
-Le rapprochement devient alors presque inévitable. Le médecin du travail intervient dans des organisations humaines pour repérer les tensions, les atteintes, les dysfonctionnements et les conditions de stabilité. ArchCode, d’une certaine manière, applique un geste cousin à l’organisation logicielle. Il ne remplace pas l’ingénierie. Il l’élargit. Il ajoute une couche d’observation systémique.
+Le rapprochement devient alors presque inévitable. Le médecin du travail intervient dans des organisations humaines pour repérer les tensions, les atteintes, les dysfonctionnements et les conditions de stabilité. SpQE, d’une certaine manière, applique un geste cousin à l’organisation logicielle. Il ne remplace pas l’ingénierie. Il l’élargit. Il ajoute une couche d’observation systémique.
 
 Cette analogie n’est pas un simple effet de style. Elle éclaire l’origine même du projet. Un créateur formé à observer les entreprises comme des milieux humains complexes a pu reconnaître dans le code généré à grande échelle un autre type de milieu complexe, lui aussi traversé par des règles, des interactions, des écarts et des crises. Là où d’autres auraient vu un problème purement technique, il a vu un terrain d’observation, de diagnostic et de régulation.
 
@@ -147,13 +147,13 @@ Dans ce cadre, SpQE Lab propose plus qu’une méthode de génération. Il propo
 
 En ce sens, SpQE Lab ne traite pas seulement le code comme de la technique. Il le traite comme une forme d’organisation. Et c’est précisément ce déplacement de regard qui ouvre un territoire intellectuel neuf, à la frontière de l’ingénierie, de l’anthropologie et de la clinique des systèmes complexes.
 
-<!-- ARCHCODE-ANTHROPOLOGY-US-PANEL:START -->
+<!-- SpQE-ANTHROPOLOGY-US-PANEL:START -->
 
-<section class="archcode-soft-panel">
+<section class="SpQE-soft-panel">
 
 ## SpQE Lab and the Anthropology of Code
 
-There is a rare, almost counterintuitive intuition at the origin of ArchCode:
+There is a rare, almost counterintuitive intuition at the origin of SpQE:
 code is not only a technical construction.
 It can also be observed as an environment, a set of rules, relationships, tensions, regulations, and compromises.
 In other words, it can be approached as an object of anthropology.
@@ -179,7 +179,7 @@ He observes an entire scene.
 He perceives the gap between the language of care and actual practices, between the official organizational chart and concrete power relations, between written procedure and employees’ lived experience.
 In practice, he performs an anthropology of work.
 
-With ArchCode, an analogous gesture appears in the field of software.
+With SpQE, an analogous gesture appears in the field of software.
 The point is no longer only to write code or generate files.
 The point is to observe how a set of modules can hold together, converge, cooperate, contradict itself, repair itself, or collapse.
 The gaze becomes structural.
@@ -337,7 +337,7 @@ It sheds light on the very origin of the project.
 A creator trained to observe companies as complex human environments could recognize, in code generated at scale, another type of complex environment, also crossed by rules, interactions, deviations, and crises.
 Where others might have seen a purely technical problem, he saw a field of observation, diagnosis, and regulation.
 
-This may be one of ArchCode’s deepest singularities:
+This may be one of SpQE’s deepest singularities:
 it was not born only from a software ambition.
 It was born from a gaze.
 A gaze forged in the observation of human organizations, then transposed to organizations of code.
@@ -360,6 +360,6 @@ And it is precisely this shift in perspective that opens a new intellectual terr
 
 </section>
 
-<!-- ARCHCODE-ANTHROPOLOGY-US-PANEL:END -->
+<!-- SpQE-ANTHROPOLOGY-US-PANEL:END -->
 
 
