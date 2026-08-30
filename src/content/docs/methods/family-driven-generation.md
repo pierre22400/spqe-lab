@@ -1,20 +1,20 @@
 ---
 title: Family-driven Generation
-description: ARCHCode Lab method for generating reproducible functional prototype families.
+description: SpQE Lab method for generating reproducible functional prototype families.
 sidebar:
   label: Family-driven Generation
   order: 10
 ---
 
-Family-driven generation is an ARCHCode Lab method for moving from isolated prototype generation to reproducible functional cloning.
+Family-driven generation is an SpQE Lab method for moving from isolated prototype generation to reproducible functional cloning.
 
-A `family` is a controlled class of prototypes associated with stable public behavior. It is not just a label and not just a broad category. In ARCHCode, a family can carry invariants, a reproducible public contract, a deterministic S0-91 probe, a PROD Contract, and, when available, a `technical_structure` describing the expected architectural ownership behind that public behavior.
+A `family` is a controlled class of prototypes associated with stable public behavior. It is not just a label and not just a broad category. In SpQE, a family can carry invariants, a reproducible public contract, a deterministic S0-91 probe, a PROD Contract, and, when available, a `technical_structure` describing the expected architectural ownership behind that public behavior.
 
 This page describes the general doctrine. It is a method page, not a single experiment report.
 
-<!-- ARCHCODE-FAMILY-DIAGRAM:START -->
+<!-- SpQE-FAMILY-DIAGRAM:START -->
 
-<figure class="archcode-diagram-figure">
+<figure class="SpQE-diagram-figure">
   <img
     src="/spqe-lab/images/methods/diagram_family01.svg"
     alt="Family-driven generation flow from SpecBlock to deterministic S0-91 validation"
@@ -24,11 +24,11 @@ This page describes the general doctrine. It is a method page, not a single expe
   </figcaption>
 </figure>
 
-<!-- ARCHCODE-FAMILY-DIAGRAM:END -->
+<!-- SpQE-FAMILY-DIAGRAM:END -->
 
 ## Why families matter
 
-A prototype can converge technically while still losing an essential part of its intended behavior. For ARCHCode, that is not enough.
+A prototype can converge technically while still losing an essential part of its intended behavior. For SpQE, that is not enough.
 
 Family-driven generation raises the requirement. The question becomes:
 
@@ -36,7 +36,7 @@ Family-driven generation raises the requirement. The question becomes:
 Can two generated prototypes belonging to the same family preserve the same public lifecycle invariant?
 ```
 
-This matters because ARCHCode Lab is not only trying to generate code that runs once. It aims to generate prototypes whose observable behavior can be reproduced, tested, compared, and eventually composed.
+This matters because SpQE Lab is not only trying to generate code that runs once. It aims to generate prototypes whose observable behavior can be reproduced, tested, compared, and eventually composed.
 
 A family therefore acts as an upstream stabilizer. It gives the pipeline a known behavioral shape before code generation begins.
 
@@ -58,7 +58,7 @@ optionally a deterministic S0-91 probe
 optionally a technical_structure contract
 ```
 
-A family aligns several layers of the ARCHCode Lab pipeline:
+A family aligns several layers of the SpQE Lab pipeline:
 
 ```text
 PASS1 classification
@@ -185,7 +185,7 @@ PASS1bis should not behave as a second full architect. Its role is to preserve a
 
 The PROD Contract transports the selected family contract through the execution plan.
 
-Its purpose is to make the family decision operational. Instead of leaving HARNESS or later stages to infer behavior from the SpecBlock again, ARCHCode Lab carries a structured contract downstream.
+Its purpose is to make the family decision operational. Instead of leaving HARNESS or later stages to infer behavior from the SpecBlock again, SpQE Lab carries a structured contract downstream.
 
 The doctrine is:
 
@@ -243,13 +243,13 @@ Family-driven generation is not a rigid template system.
 
 A family does not dictate every file, every function, or every implementation detail. It defines the public lifecycle and the architectural constraints needed to preserve that lifecycle.
 
-It is also not a pruning strategy. ARCHCode Lab does not primarily generate many candidates and discard most of them. Its preferred mode is repair: keep the best available prototype alive, identify what fails, patch the relevant defect, and revalidate the system.
+It is also not a pruning strategy. SpQE Lab does not primarily generate many candidates and discard most of them. Its preferred mode is repair: keep the best available prototype alive, identify what fails, patch the relevant defect, and revalidate the system.
 
 ## Off-family prototypes remain important
 
 Not every successful prototype should become a family.
 
-ARCHCode Lab also generates off-family prototypes: scientific CLIs, data processors, extraction tools, report generators, validation utilities, and experimental one-shot tools.
+SpQE Lab also generates off-family prototypes: scientific CLIs, data processors, extraction tools, report generators, validation utilities, and experimental one-shot tools.
 
 These prototypes are useful because they reveal new patterns, new failure modes, and possible future families. A prototype may first converge off-family, then later suggest a reusable lifecycle that deserves a deterministic probe.
 
@@ -271,7 +271,7 @@ A single experiment demonstrates one result. A family defines a reusable way to 
 
 That is why family-driven generation belongs in Methods. Data Workspace CLI is one concrete experiment. The family doctrine is the method that explains why this experiment matters.
 
-The broader ARCHCode Lab trajectory is:
+The broader SpQE Lab trajectory is:
 
 ```text
 generate convergent prototypes
@@ -283,7 +283,7 @@ generate convergent prototypes
 → repair with evidence when needed
 ```
 
-This is the step that moves ARCHCode Lab closer to functional cloning: not merely producing software that runs, but producing software whose public behavior belongs to a known, reproducible class.
+This is the step that moves SpQE Lab closer to functional cloning: not merely producing software that runs, but producing software whose public behavior belongs to a known, reproducible class.
 
 ## What this page does not disclose
 
