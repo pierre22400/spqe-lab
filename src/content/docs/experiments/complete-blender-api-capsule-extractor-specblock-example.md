@@ -10,12 +10,12 @@ sidebar:
 
 ```json
 {
-"title": "Blender API Capsule Extractor — First Backend for ARCHCode 3D",
-"summary": "Local deterministic stdlib-only CLI that extracts a compact ACW-ready backend documentation capsule for ARCHCode 3D relationships.py from an already-unpacked official Blender Python API HTML tree.",
+"title": "Blender API Capsule Extractor — First Backend for SpQE 3D",
+"summary": "Local deterministic stdlib-only CLI that extracts a compact ACW-ready backend documentation capsule for SpQE 3D relationships.py from an already-unpacked official Blender Python API HTML tree.",
 "spec_version": "v1.2-compact 29/06/2026",
 "source_mode": "manual_plus_preflight",
-"comment_human": "Clean vitrine revision of the Blender Spatial Relationships Capsule Extractor CLI. This prototype is intentionally bounded: it is not a generic crawler, not a Blender runtime tool, not a scene renderer, and not a meta-extractor. It produces a compact Blender backend documentation capsule for ACW. Blender is the first backend of ARCHCode 3D, not the architectural limit of the system. The 29/06/2026 preflight passed on an already-unpacked Blender Python API HTML tree with 2105 HTML files, required pages present, and all critical members present for bpy.types.Object, bpy.types.Collection, and bpy.types.ID.",
-"target_audience": "ARCHCode developer preparing backend documentation capsules for ACW in the ARCHCode 3D pipeline.",
+"comment_human": "Clean vitrine revision of the Blender Spatial Relationships Capsule Extractor CLI. This prototype is intentionally bounded: it is not a generic crawler, not a Blender runtime tool, not a scene renderer, and not a meta-extractor. It produces a compact Blender backend documentation capsule for ACW. Blender is the first backend of SpQE 3D, not the architectural limit of the system. The 29/06/2026 preflight passed on an already-unpacked Blender Python API HTML tree with 2105 HTML files, required pages present, and all critical members present for bpy.types.Object, bpy.types.Collection, and bpy.types.ID.",
+"target_audience": "SpQE developer preparing backend documentation capsules for ACW in the SpQE 3D pipeline.",
 "deployment_context": "Local CLI execution, without network and without Blender runtime, on an official Blender Python API HTML documentation tree already present on disk.",
 "input_sources": [
 "Local root of the official Blender Python API HTML documentation already unzipped.",
@@ -29,8 +29,8 @@ sidebar:
 "Deterministic stderr on expected user errors."
 ],
 "functional_objectives": [
-"Treat Blender as the first backend target for ARCHCode 3D, not as the universal architecture.",
-"Build a backend documentation capsule that helps ACW project ARCHCode 3D spatial relationships into Blender Python code.",
+"Treat Blender as the first backend target for SpQE 3D, not as the universal architecture.",
+"Build a backend documentation capsule that helps ACW project SpQE 3D spatial relationships into Blender Python code.",
 "Respect TARGET_MODULE_ROLE_RELATIONSHIPS_PY: document relationships.py without implementing it.",
 "Read only local files and never access the network.",
 "Resolve logical symbols separately from physical HTML carrier pages.",
@@ -42,14 +42,14 @@ sidebar:
 "Extract ID members relevant to naming, data-block metadata, library linkage, session identity, and reference tracking.",
 "Prioritize the critical members proven present by the 29/06/2026 preflight.",
 "Clean Sphinx, Furo, and Blender UI noise: navigation, sidebar, footer, headerlink, theme toggles, global indexes, bpy.ops.*, GeometryNode, and CompositorNode noise.",
-"Inject ARCHCode relationships.py ownership doctrine as static profile content, not as inferred Blender documentation.",
+"Inject SpQE relationships.py ownership doctrine as static profile content, not as inferred Blender documentation.",
 "Build a compact capsule with non-empty doctrinal sections and non-empty official API symbols.",
 "Render the text capsule as readable ACW-oriented blocks, not as single-line JSON section blobs.",
 "Support inspect mode for symbol-level diagnostics without writing capsule artifacts.",
 "Support build mode for JSON and text artifact generation.",
 "Support strict mode that fails on missing required pages or missing critical relationship members.",
 "Support dry-run mode that reports expected actions and paths without writing artifacts.",
-"Produce a stable capsule suitable for SPQE Lab vitrine demonstration as the first backend capsule extractor for ARCHCode 3D."
+"Produce a stable capsule suitable for SPQE Lab vitrine demonstration as the first backend capsule extractor for SpQE 3D."
 ],
 "non_functional_constraints": [
 "Python 3.11+.",
@@ -76,7 +76,7 @@ sidebar:
 "Treat the Blender manual HTML root as optional secondary context for inspect only.",
 "Preserve the root/path/hydration contract: a resolved page may be path-only and hydrated later.",
 "Preserve the symbol-aware contract for required MVP official pages: bpy.types.Object, bpy.types.Collection, and bpy.types.ID.",
-"Keep Blender-specific knowledge late in the pipeline as backend capsule content, not as ARCHCode 3D universal doctrine.",
+"Keep Blender-specific knowledge late in the pipeline as backend capsule content, not as SpQE 3D universal doctrine.",
 "Represent the backend capsule as declarative knowledge injected into ACW rather than as a coded adapter module.",
 "Do not generate an adapter, renderer, Blender plugin, or scene authoring runtime.",
 "Keep product-specific relationships.py capsule sections separate from generic S091 family obligations."
@@ -97,7 +97,7 @@ sidebar:
 "bad_arguments": "Return 2 and write at least one short stderr line."
 },
 "success_behavior": {
-"json_output": "Write a JSON capsule conforming to archcode_blender_doc_capsule.v1.",
+"json_output": "Write a JSON capsule conforming to SpQE_blender_doc_capsule.v1.",
 "text_output": "Write a bounded ACW-readable text capsule delimited by BEGIN_BLENDER_DOC_CAPSULE and END_BLENDER_DOC_CAPSULE.",
 "source_docs": "Never modify source documentation files.",
 "strict_build_quality": "In strict mode, required pages, required symbols, critical members, and non-empty required capsule sections must be validated."
@@ -145,28 +145,28 @@ sidebar:
 "notes": "Flat CLI with direct subcommands. build is the main command; inspect is a local diagnostic tool. no-args and help must return 0."
 },
 "domain_contracts": {
-"schema_version": "archcode_3d_blender_backend_capsule_domain.v1",
+"schema_version": "SpQE_3d_blender_backend_capsule_domain.v1",
 "family_alignment": {
 "expected_family": "local_document_extractor_lifecycle",
 "family_role": "Local document extractor prototype: explicit HTML root, symbol page resolution, HTML hydration, documentary extraction, JSON/TXT artifacts.",
 "prototype_must_not_implement_harness": true,
 "notes": [
-"The family is owned by ARCHCode and HARNESS, not by the generated prototype.",
+"The family is owned by SpQE and HARNESS, not by the generated prototype.",
 "The prototype exposes a compatible CLI surface: build from --api-html-root to explicit artifacts.",
 "S091 verifies the generic local document extractor lifecycle, not product-specific Blender relationships.py sections."
 ]
 },
-"archcode_3d_positioning": {
-"product_role": "First backend documentation capsule extractor for ARCHCode 3D.",
+"SpQE_3d_positioning": {
+"product_role": "First backend documentation capsule extractor for SpQE 3D.",
 "backend": "Blender",
 "backend_capsule_role": "Declarative backend knowledge injected into ACW.",
 "not_an_adapter_module": true,
 "not_a_scene_generator": true,
 "not_a_blender_runtime_script": true,
-"design_note": "ACW uses the backend capsule to project ARCHCode 3D scene abstractions into backend-specific Python code. Blender-specific knowledge must appear late and only in the backend capsule layer."
+"design_note": "ACW uses the backend capsule to project SpQE 3D scene abstractions into backend-specific Python code. Blender-specific knowledge must appear late and only in the backend capsule layer."
 },
 "target_document_preflight": {
-"schema_version": "archcode_3d_backend_doc_preflight.v1",
+"schema_version": "SpQE_3d_backend_doc_preflight.v1",
 "generated_utc": "2026-06-29T07:31:49.775585+00:00",
 "backend": "Blender",
 "documentation_kind": "Blender Python API HTML",
@@ -204,7 +204,7 @@ sidebar:
 "block_id": "TARGET_MODULE_ROLE_RELATIONSHIPS_PY",
 "target_module": "relationships.py",
 "role": [
-"relationships.py is the Blender backend runtime spatial-relationship module for ARCHCode 3D editable scenes.",
+"relationships.py is the Blender backend runtime spatial-relationship module for SpQE 3D editable scenes.",
 "It is not the documentation extractor.",
 "It is not an asset generator.",
 "It is not a material, lighting, camera, render, CLI, or packaging module.",
@@ -238,12 +238,12 @@ sidebar:
 "hidden interface helper",
 "world anchor"
 ],
-"hidden_archcode_helper_interfaces": [
-".archcode_interface_ground",
-".archcode_interface_tabletop",
-".archcode_interface_wall",
-".archcode_interface_sky",
-".archcode_anchor_*"
+"hidden_SpQE_helper_interfaces": [
+".SpQE_interface_ground",
+".SpQE_interface_tabletop",
+".SpQE_interface_wall",
+".SpQE_interface_sky",
+".SpQE_anchor_*"
 ],
 "frame_and_bbox_concepts": [
 "object declaration frame",
@@ -272,7 +272,7 @@ sidebar:
 "relationships.py must not own render settings.",
 "relationships.py must not perform final rendering.",
 "relationships.py must not parse CLI arguments.",
-"relationships.py may create or update invisible helper objects only when namespaced with .archcode_*."
+"relationships.py may create or update invisible helper objects only when namespaced with .SpQE_*."
 ],
 "human_construction_paradigm": [
 "Start from anchors, planes, relative positions, support surfaces, alignments, containment, and local frames.",
@@ -435,7 +435,7 @@ sidebar:
 "ownership": {
 "owns": [
 "semantic spatial relation normalization",
-"hidden .archcode_* interface helpers",
+"hidden .SpQE_* interface helpers",
 "object-to-object relationship constraints",
 "local homogeneous spatial clusters",
 "parenting, grouping, visibility, and custom-property metadata needed by the solver",
@@ -454,9 +454,9 @@ sidebar:
 },
 "creation_patterns": [
 "Create solver helper empties or meshless anchors with bpy.data.objects.new(name, None).",
-"Link helper objects explicitly into an ARCHCode-owned collection.",
-"Create or reuse an ARCHCode collection before linking generated helper objects.",
-"Assign a stable .archcode_ prefix to internal helper data-blocks.",
+"Link helper objects explicitly into an SpQE-owned collection.",
+"Create or reuse an SpQE collection before linking generated helper objects.",
+"Assign a stable .SpQE_ prefix to internal helper data-blocks.",
 "Attach custom properties such as relation kind, source object, target object, interface id, and solver stage to helper IDs."
 ],
 "assignment_patterns": [
@@ -474,11 +474,11 @@ sidebar:
 "Do not depend on remote documentation, network access, or non-local files during capsule extraction.",
 "Do not require mathutils.Vector, mathutils.Matrix, mathutils.Euler, or mathutils.html pages in the MVP extraction profile.",
 "Do not collapse all spatial reasoning into absolute XYZ coordinates before local interfaces and relation constraints are known.",
-"Do not mutate unrelated user scene objects unless they are explicitly part of the ARCHCode relationship graph."
+"Do not mutate unrelated user scene objects unless they are explicitly part of the SpQE relationship graph."
 ],
 "safety_rules": [
 "Represent spatial intent through deterministic relation records before applying final numeric transforms.",
-"Create hidden helper objects or helper collections with a .archcode_ prefix when solver interfaces, contact planes, rails, or local frames must exist in the Blender scene.",
+"Create hidden helper objects or helper collections with a .SpQE_ prefix when solver interfaces, contact planes, rails, or local frames must exist in the Blender scene.",
 "Keep helper data-blocks invisible to normal renders when they are implementation scaffolding rather than user assets.",
 "Store relationship provenance and solver metadata in ID custom properties.",
 "Use collections to group generated assets, relationship helpers, and local interface families without taking ownership of unrelated scene data.",
@@ -488,14 +488,14 @@ sidebar:
 ]
 },
 "canonical_capsule_template": {
-"schema_version": "archcode_blender_doc_capsule.v1",
+"schema_version": "SpQE_blender_doc_capsule.v1",
 "target_backend": "Blender",
 "target_module": "relationships.py",
 "source_kind": "official_blender_python_api_html",
 "capsule_scope": "MVP spatial relationships, hidden interface helpers, relative transforms, object membership, visibility, metadata, and solver-relevant Blender API members.",
 "s091_family_scope_note": "Product contract for relationships.py only. Do not promote these product sections into generic S091 obligations.",
 "sections": {
-"archcode_ownership": [],
+"SpQE_ownership": [],
 "assignment_patterns": [],
 "creation_patterns": [],
 "forbidden_elements": [],
@@ -527,21 +527,21 @@ sidebar:
 "child.matrix_parent_inverse = anchor.matrix_world.inverted()"
 ],
 "assign_relationship_metadata": [
-  "helper[\"archcode_kind\"] = \"relationship\"",
-  "helper[\"archcode_relationship_id\"] = relationship_id",
-  "helper[\"archcode_anchor_id\"] = anchor_id",
-  "helper[\"archcode_relation_type\"] = relation_type"
+  "helper[\"SpQE_kind\"] = \"relationship\"",
+  "helper[\"SpQE_relationship_id\"] = relationship_id",
+  "helper[\"SpQE_anchor_id\"] = anchor_id",
+  "helper[\"SpQE_relation_type\"] = relation_type"
 ],
 "minimal_acw_intent": [
 "Create deterministic relationship helpers by name.",
 "Represent relative placement with anchors, interface helpers, and explicit transforms.",
 "Attach helpers to explicit Blender collections without active context.",
-"Attach ARCHCode relationship metadata through custom properties.",
+"Attach SpQE relationship metadata through custom properties.",
 "Preserve editable scene structure while resolving spatial constraints deterministically."
 ],
 "product_quality_contract": {
 "required_capsule_sections": [
-"archcode_ownership",
+"SpQE_ownership",
 "assignment_patterns",
 "creation_patterns",
 "forbidden_elements",
@@ -550,7 +550,7 @@ sidebar:
 "safety_rules"
 ],
 "non_empty_sections_in_strict_mode": [
-"archcode_ownership",
+"SpQE_ownership",
 "assignment_patterns",
 "creation_patterns",
 "forbidden_elements",
@@ -617,14 +617,14 @@ sidebar:
 "Extract selected relationship-relevant members before truncation.",
 "Prioritize target members in the order defined by the profile or preflight contract.",
 "Remove navigation and global index noise.",
-"Preserve wildcards such as .archcode_* and bpy.ops.* in textual patterns."
+"Preserve wildcards such as .SpQE_* and bpy.ops.* in textual patterns."
 ],
 "capsule": [
 "Top-level schema_version must be a string.",
 "metadata and sections must be top-level.",
 "official_api_symbols must contain exactly one entry per required logical symbol.",
 "official_api_symbols entries should include compact members when extracted.",
-"archcode_ownership, assignment_patterns, creation_patterns, forbidden_elements, and safety_rules must not be empty in strict mode.",
+"SpQE_ownership, assignment_patterns, creation_patterns, forbidden_elements, and safety_rules must not be empty in strict mode.",
 "Product sections must not become generic S091 obligations."
 ],
 "rendering": [
@@ -647,7 +647,7 @@ sidebar:
   "Keep Windows/POSIX path compatibility.",
   "Avoid POSIX-only APIs.",
   "Never use bpy.ops.* as the normal deterministic solve path.",
-  "Never let markdown or wildcard cleaning strip '*' from .archcode_anchor_* or bpy.ops.*.",
+  "Never let markdown or wildcard cleaning strip '*' from .SpQE_anchor_* or bpy.ops.*.",
   "Do not introduce top-level specblock fields outside the established compact specblock structure."
 ]
 }
