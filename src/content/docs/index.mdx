@@ -1,6 +1,6 @@
 ---
 title: SpQE Lab
-description: Send a small software specification and receive a tested, documented Python prototype.
+description: Evidence-driven software generation through executable qualification, diagnosis and targeted repair.
 template: splash
 tableOfContents: false
 editUrl: false
@@ -20,44 +20,66 @@ import {
   loop
   playsInline
   preload="metadata"
-  aria-label="SpQE pipeline from software specification to tested Python prototype"
+  aria-label="SpQE pipeline from software intent to executable qualification and repair"
 >
   <source
     src="./media/spqe-pipeline-demo.mp4"
     type="video/mp4"
   />
-  Spec → Generate → Run → Test → Repair → Python Prototype
+  Intent → Generate → Run → Qualify → Diagnose → Repair
 </video>
 
-**Send a small software specification. Receive a tested, documented Python prototype.**
+**Create quickly. Verify seriously. Learn from every run.**
+
+SpQE Lab is an independent applied-research project studying how an AI coding model can be placed inside a controlled software-production loop. The aim is not merely to generate code, but to build software, execute it, measure its observable behaviour, diagnose defects and support targeted repair.
 
 <CardGrid>
-  <Card title="What you send">
-    A small, bounded software need.
+  <Card title="Build">
+    Turn an explicit software intent into a structured, multi-file executable prototype.
   </Card>
 
-  <Card title="What SpQE does">
-    Generates, runs, tests and repairs the prototype.
+  <Card title="Qualify">
+    Exercise the generated program through independent black-box controls and preserve the evidence.
   </Card>
 
-  <Card title="What you receive">
-    Code, test results, outputs, documentation and known limitations.
+  <Card title="Diagnose and repair">
+    Localize contract or integration failures, apply narrow corrections and rerun qualification.
   </Card>
 </CardGrid>
 
-> **4 public experiments**, with specifications, generated code, tests, failures, repairs and documentation.
+## What the current experiments show
+
+Three executable comparisons against Kiro now document both strengths and limits. Kiro is currently more robust at first generation. SpQE nevertheless produces substantial domain behaviour, exposes failures through executable evidence and has demonstrated that localized defects can be closed without regenerating an entire program.
+
+The dominant SpQE engineering problem is now concrete: **first-shot contract consistency between generated modules**.
+
+This is a research result, not a hidden caveat. It identifies where model capability, orchestration and qualification can be measured separately.
+
+## Why model teams may care
+
+SpQE surrounds a coding model with explicit contracts, modular construction, observable qualification and evidence-guided repair. Replacing the model backend would make it possible to measure its effect on:
+
+- first-shot inter-file consistency;
+- executable contract compliance;
+- inference time and cost;
+- defect localization;
+- repair trajectories.
+
+A useful next experiment is therefore direct: connect a Mistral coding model to the same pipeline and rerun the executable benchmark series.
 
 <div>
-  <LinkButton href="./experiments/noisedoselab/">
-    See the experiments
+  <LinkButton href="./benchmarks/">
+    Read the comparative benchmarks
   </LinkButton>
 
   {' '}
 
   <LinkButton
-    href="./request-kit/"
+    href="./methods/"
     variant="secondary"
   >
-    Submit a prototype request
+    Understand the method
   </LinkButton>
 </div>
+
+> SpQE Lab is currently a technical showcase and research contact surface. It is not accepting external prototype specifications.
