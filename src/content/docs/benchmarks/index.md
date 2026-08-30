@@ -27,7 +27,7 @@ Across the three experiments, the dominant SpQE failure mode is **cross-module c
 | Benchmark | Generation time | Recorded executable result | SpQE repair status |
 | --- | --- | --- | --- |
 | [Transaction Reconciliation](./transaction-reconciliation/) | Kiro <3 min · SpQE 14 min | Kiro 111/112 · SpQE 93/112* | **112/112** after 2 targeted repairs |
-| [Data Workspace natural](./data-workspace-natural/) | Kiro 8m12 · SpQE 9m40 | Kiro 223/235 · SpQE **179/179** | Full pass on the SpQE battery after 2 targeted repairs; denominators differ |
+| [Data Workspace natural](./data-workspace-natural/) | Kiro 8m12 · SpQE 9m40 | Kiro 158/179 (uncorrected) · SpQE **179/179** after repair | Shared 179-control battery; 2 SpQE repairs, no Kiro repair captured |
 | [NoiseDoseLab](./noisedoselab/) | Kiro 8 min · SpQE **6 min** | Kiro **251/254** · SpQE 215/250 | No comparative repair cycle recorded |
 
 \* Score recorded after removal of one blocking micro-defect, before the two targeted local corrections that completed qualification.
