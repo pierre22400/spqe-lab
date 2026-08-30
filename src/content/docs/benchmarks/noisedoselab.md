@@ -1,6 +1,6 @@
 ---
 title: NoiseDoseLab
-description: Comparative executable benchmark: occupational noise exposure screening CLI.
+description: "Comparative executable benchmark: occupational noise exposure screening CLI."
 sidebar:
   label: NoiseDoseLab
   order: 4
