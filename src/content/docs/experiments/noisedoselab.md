@@ -8,7 +8,6 @@ sidebar:
     text: Qualified
     variant: tip
 ---
-<!-- "C:\Users\Utilisateur\Documents\Vitrine\SpQE-lab-source-recovery_20260626_141628\src\content\docs\experiments\noisedoselab.md"-->
 
 
 ## Abstract
@@ -27,6 +26,8 @@ The final run completed in 19 minutes, using 20 LLM calls across 6 agents, for a
 NoiseDoseLab Level 1 CLI is a deterministic scientific command-line prototype for occupational noise exposure screening. It reads a local baseline CSV describing worker noise-exposure segments, computes energy-based normalized 8-hour exposure metrics, compares each worker’s result to a user-supplied reference level in dB, and produces stable text or JSON reports. The prototype also supports optional scenario adjustments through a separate CSV, allowing prevention strategies to be compared against the baseline exposure profile.
 
 This page documents an SpQE Lab experiment. SpQE Lab is an automatic prototype-generation software system: it starts from a structured specification, generates a working software prototype, produces associated user documentation, and then subjects the result to executable qualification tests.
+
+> **Public redaction note.** Historical internal identifiers and local absolute paths are redacted in this public copy. Functional values, results and counts are unchanged.
 
 Here, the NoiseDoseLab CLI is used as a concrete case study. The page follows the full lifecycle of one generated prototype: SpecBlock, generated CLI, generated user manual, black-box tests, defect detection, targeted fixes, and final revalidation.
 
@@ -56,19 +57,19 @@ Prototype evaluated: NoiseDoseLab Level 1 CLI
 Local qualification context:
 
 ```text
-C:\Users\Utilisateur\Documents\mSpQE\pytest-5940\test_phase2_preflight_acw_chec0\repo\.SpQE
+<GENERATED_PACKAGE_DIR>
 ```
 
 CLI entry point:
 
 ```text
-C:\Users\Utilisateur\Documents\mSpQE\pytest-5940\test_phase2_preflight_acw_chec0\repo\.SpQE\app\cli.py
+<GENERATED_PACKAGE_DIR>/app/cli.py
 ```
 
 Black-box test battery:
 
 ```text
-C:\Users\Utilisateur\Documents\mSpQE\tests\test_noisedoselab_blackbox.py
+<QUALIFICATION_BATTERY>
 ```
 
 Execution command:
@@ -413,7 +414,7 @@ Final run:
 ====================================================================================================
 NOISEDOSelab BLACK-BOX TEST BATTERY
 ====================================================================================================
-Package root : C:\Users\Utilisateur\Documents\mSpQE\pytest-5940\test_phase2_preflight_acw_chec0\repo\.SpQE
+Package root : <GENERATED_PACKAGE_DIR>
 Hard fails   : 0
 Soft fails   : 0
 ```
@@ -677,8 +678,12 @@ Sequence:
 8. Add scientific numerical tests.
 9. Detect leq_db / level_db and duration_hours / duration_h mismatch.
 10. Patch module-boundary aliases.
-11. Re-run full battery.
-12. Obtain VERDICT: OK.
+11. Re-run the extended battery.
+12. Add the user-manual conformance check for invalid-row reporting.
+13. Detect missing invalid-row evidence in the final report.
+14. Patch the orchestration boundary.
+15. Re-run the complete battery.
+16. Obtain VERDICT: OK.
 ```
 
 This is an important demonstration point for SpQE.
@@ -695,14 +700,15 @@ The prototype is not a mock shell. It reads CSV files, validates input, computes
 
 ### The black-box battery detected real defects
 
-The battery found two meaningful defects:
+The battery found three meaningful defects:
 
 ```text
 reference_db accepted zero or negative values
 validated baseline fields were not consistently consumed by calculation modules
+invalid-row evidence was not propagated into the final report
 ```
 
-Both defects were observable only through executable behavior.
+All three defects were observable only through executable behavior.
 
 ### The defects were corrected locally and safely
 
@@ -711,6 +717,7 @@ The corrections were targeted:
 ```text
 CLI boundary for reference validation
 module-boundary dialect normalization for scientific calculations
+orchestration boundary for invalid-row evidence propagation
 ```
 
 The full battery was rerun after correction and returned:
@@ -813,7 +820,7 @@ Final verdict:
 VERDICT: OK
 ```
 
-NoiseDoseLab is therefore suitable for inclusion in the SpQE Lab Lab showcase as a qualified scientific prototype.
+NoiseDoseLab is therefore suitable for inclusion in the SpQE Lab showcase as a qualified scientific prototype.
 
 
 
