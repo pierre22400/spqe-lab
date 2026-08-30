@@ -25,7 +25,7 @@ A deterministic Python CLI reconciles two CSV transaction ledgers. It validates 
 
 **Initial qualification.** Kiro was nearly complete at first pass. SpQE already produced most domain logic, but a limited number of observable contract mismatches remained.
 
-**Local repair.** SpQE repairs targeted the identified defects rather than regenerating the program wholesale.
+**Local repair.** Two targeted local repairs were applied to the identified defects rather than regenerating the program wholesale. This public summary does not characterize the repair step as fully autonomous.
 
 **Final result.** The SpQE program reached **112 / 112** executable controls.
 
