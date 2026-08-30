@@ -105,13 +105,13 @@ Blender API Capsule Extractor — First Backend for SpQE 3D
 Local qualification context:
 
 ```text
-/content/archcode_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.archcode
+/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE
 ```
 
 CLI entry point:
 
 ```text
-/content/archcode_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.archcode/app/cli.py
+/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/app/cli.py
 ```
 
 Blender API HTML root:
@@ -152,14 +152,14 @@ This inventory matters for qualification. The preflight established that the doc
 Black-box report:
 
 ```text
-/content/archcode_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.archcode/blackbox_vitrine_tests/blender_api_extractor_blackbox_report.json
+/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/blackbox_vitrine_tests/blender_api_extractor_blackbox_report.json
 ```
 
 Generated capsule artifacts:
 
 ```text
-/content/archcode_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.archcode/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.json
-/content/archcode_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.archcode/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.txt
+/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.json
+/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.txt
 ```
 
 ## 2. Purpose of the qualification
@@ -342,7 +342,7 @@ Corrected behavior:
 inspect --strict succeeds for Object, Collection and ID
 build --strict produces canonical JSON and readable text artifacts
 sections use id/entries
-schema_version is archcode_blender_doc_capsule.v1
+schema_version is SpQE_blender_doc_capsule.v1
 critical Blender API members are present
 text output uses readable BEGIN_SECTION blocks
 ```
@@ -433,19 +433,19 @@ The strict build workflow produced both expected artifacts.
 JSON capsule:
 
 ```text
-/content/archcode_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.archcode/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.json
+/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.json
 ```
 
 Text capsule:
 
 ```text
-/content/archcode_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.archcode/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.txt
+/content/SpQE_runs/LIVE-PHASE2-PREFLIGHT-ACW-CHECKERS-1782720151/.SpQE/blackbox_vitrine_tests/artifacts/relationships.acw_capsule.txt
 ```
 
 Validated JSON properties:
 
 ```text
-schema_version = archcode_blender_doc_capsule.v1
+schema_version = SpQE_blender_doc_capsule.v1
 official_api_symbols_count = 3
 official_member_count = 31
 ```
@@ -453,7 +453,7 @@ official_member_count = 31
 Validated capsule sections:
 
 ```text
-archcode_ownership
+SpQE_ownership
 assignment_patterns
 creation_patterns
 forbidden_elements
