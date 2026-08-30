@@ -153,7 +153,7 @@ SpQE Lab has been tested on a growing corpus of generated prototypes:
 * Blender Interfaces Capsule Extractor CLI — Extracts Blender interface and anchor concepts.
 * Blender Spatial Relationships Capsule Extractor CLI — Extracts Blender spatial relationship concepts.
 * Blender Spatial Anchors and Occupancy Capsule Extractor CLI — Extracts anchor and occupancy modeling concepts.
-* Data Workspace CLI — Builds chronological evidence timelines from local records.
+* Evidence Timeline CLI — Builds chronological evidence timelines from local records.
 * CausalLab CLI — Tests causal-analysis workflows and manual conformance.
 * GrowthCurveLab CLI — Analyzes biological growth-curve CSV data.
 * ExposureLab Level 1 CLI — Screens chemical exposure records from CSV files.
@@ -162,7 +162,7 @@ SpQE Lab has been tested on a growing corpus of generated prototypes:
 
 ## Current experiments
 
-The five highlighted experiments below were selected because they show different SpQE Lab dimensions: doctrine, scientific qualification, family-driven prototype generation, spatial reasoning, and validation infrastructure.
+The four highlighted experiments below were selected because together they show scientific qualification, family-driven prototype generation, spatial reasoning, and validation infrastructure.
 
 * NoiseDoseLab Level 1 CLI
 * Data Workspace CLI
@@ -178,7 +178,7 @@ In that sense, SpQE Lab is better understood as a software forge than as a simpl
 
 The central idea is cybernetic: the generated prototype is observed, tested, corrected, and revalidated through feedback. SpQE Lab does not rely primarily on pruning large numbers of generated candidates. It favors repair, continuity, and traceability: keep the best available prototype alive, identify what fails, patch the relevant defect, and preserve what already works.
 
-This is the research direction of SpQE Lab Lab: making automated software generation more observable, more testable, and more governable, one concrete prototype at a time.
+This is the research direction of SpQE Lab: making automated software generation more observable, more testable, and more governable, one concrete prototype at a time.
 
 
 
