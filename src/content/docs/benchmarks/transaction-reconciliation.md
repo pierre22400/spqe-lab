@@ -1,6 +1,6 @@
 ---
 title: Transaction Reconciliation
-description: Comparative executable benchmark: deterministic transaction reconciliation CLI.
+description: "Comparative executable benchmark: deterministic transaction reconciliation CLI."
 sidebar:
   label: Transaction Reconciliation
   order: 2
