@@ -6,12 +6,11 @@ export default defineConfig({
   base: process.env.GITHUB_ACTIONS ? '/spqe-lab' : '/',
   integrations: [
     starlight({
-      title: 'Specification-to-Prototype Qualification Engine Lab',
-      description: 'SpQE Lab explores how structured prototype requests can be generated, tested, repaired, documented, and qualified as inspectable software prototypes.',
+      title: 'SpQE Lab',
+      description: 'Evidence-driven software generation through executable qualification, diagnosis and targeted repair.',
       customCss: ['./src/styles/archcode.css', './src/styles/custom.css'],
       sidebar: [
         { slug: 'index' },
-        { slug: 'foundations' },
         {
           label: 'Comparative Benchmarks',
           items: [
@@ -19,6 +18,13 @@ export default defineConfig({
             { slug: 'benchmarks/transaction-reconciliation' },
             { slug: 'benchmarks/data-workspace-natural' },
             { slug: 'benchmarks/noisedoselab' }
+          ]
+        },
+        {
+          label: 'Methods',
+          items: [
+            { label: 'Methods overview', slug: 'methods' },
+            { slug: 'methods/family-driven-generation' }
           ]
         },
         {
@@ -30,23 +36,7 @@ export default defineConfig({
             { slug: 'experiments/um-harness' }
           ]
         },
-        {
-          label: 'Methods',
-          items: [
-            { label: 'Methods overview', slug: 'methods' },
-            { slug: 'methods/family-driven-generation' }
-          ]
-        },
-        {
-          label: 'Request Kit',
-          items: [
-            { slug: 'request-kit' },
-            { slug: 'request-kit/contact-dossier-form' },
-            { slug: 'request-kit/prototype-request-form' },
-            { slug: 'request-kit/specblock-best-practices' },
-            { slug: 'request-kit/complete-specblock-example' }
-          ]
-        },
+        { slug: 'foundations' },
         {
           label: 'About',
           items: [
