@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://archcode-lab.github.io',
+  site: 'https://pierre22400.github.io',
   base: process.env.GITHUB_ACTIONS ? '/spqe-lab' : '/',
   integrations: [
     starlight({
