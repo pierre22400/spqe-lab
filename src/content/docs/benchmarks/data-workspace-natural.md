@@ -33,7 +33,7 @@ This benchmark matters because it stresses module interaction rather than an iso
 
 ## Related historical experiment
 
-The existing [Data Workspace CLI experiment](../experiments/data-workspace/) remains available as an earlier ARCHCode public-vitrine report. It is not the same run and must not be used as the comparative benchmark result.
+The existing [Data Workspace CLI experiment](../../experiments/data-workspace/) remains available as an earlier ARCHCode public-vitrine report. It is not the same run and must not be used as the comparative benchmark result.
 
 ## Evidence
 
