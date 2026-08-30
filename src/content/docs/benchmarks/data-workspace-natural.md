@@ -23,7 +23,7 @@ A local data-workspace CLI manages workspaces, sources, transforms, runs, report
 
 **Initial qualification.** Each generated program presented a local, observable defect. The benchmark therefore did not treat a first run as the final result.
 
-**Local repair.** SpQE applied two targeted repairs guided by black-box failures rather than a full regeneration.
+**Local repair.** Two targeted repairs were applied from the black-box failure evidence rather than performing a full regeneration. This public summary does not characterize the repair step as fully autonomous.
 
 **Final result.** SpQE reached **179 / 179** executable controls. Kiro reached **223 / 235** controls in the recorded qualification battery.
 
