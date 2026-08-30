@@ -1,6 +1,6 @@
 ---
 title: Data Workspace natural
-description: Comparative executable benchmark: local data workspace management CLI.
+description: "Comparative executable benchmark: local data workspace management CLI."
 sidebar:
   label: Data Workspace natural
   order: 3
