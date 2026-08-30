@@ -42,4 +42,3 @@ The evidence does not support a claim that SpQE beats Kiro at first generation. 
 
 The next relevant experiment is to run the same pipeline with another coding-model backend, including a Mistral model, and measure the effect on consistency, cost and repair effort.
 
-The underlying specifications, test batteries, raw results, generated sources and repair traces are being prepared for publication.
