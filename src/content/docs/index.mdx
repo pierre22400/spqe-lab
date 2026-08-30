@@ -14,21 +14,6 @@ import {
   LinkButton
 } from '@astrojs/starlight/components';
 
-<video
-  autoPlay
-  muted
-  loop
-  playsInline
-  preload="metadata"
-  aria-label="SpQE pipeline from software intent to executable qualification and repair"
->
-  <source
-    src="./media/spqe-pipeline-demo.mp4"
-    type="video/mp4"
-  />
-  Intent → Generate → Run → Qualify → Diagnose → Repair
-</video>
-
 **Create quickly. Verify seriously. Learn from every run.**
 
 SpQE Lab is an independent applied-research project studying how an AI coding model can be placed inside a controlled software-production loop. The aim is not merely to generate code, but to build software, execute it, measure its observable behaviour, diagnose defects and support targeted repair.
@@ -65,7 +50,7 @@ SpQE surrounds a coding model with explicit contracts, modular construction, obs
 - defect localization;
 - repair trajectories.
 
-A useful next experiment is therefore direct: connect a Mistral coding model to the same pipeline and rerun the executable benchmark series.
+A useful next experiment is therefore direct: connect alternative coding models to the same pipeline and compare their executable benchmark and repair trajectories.
 
 <div>
   <LinkButton href="./benchmarks/">
