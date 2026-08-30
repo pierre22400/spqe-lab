@@ -36,6 +36,16 @@ export default defineConfig({
             { slug: 'experiments/um-harness' }
           ]
         },
+        {
+          label: 'Request Kit',
+          items: [
+            { slug: 'request-kit' },
+            { slug: 'request-kit/contact-dossier-form' },
+            { slug: 'request-kit/prototype-request-form' },
+            { slug: 'request-kit/specblock-best-practices' },
+            { slug: 'request-kit/complete-specblock-example' }
+          ]
+        },
         { slug: 'foundations' },
         {
           label: 'About',
