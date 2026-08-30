@@ -50,10 +50,10 @@ SpQE Lab is currently focused on:
 - publishing the comparative Kiro benchmark series;
 - improving first-shot contract closure;
 - separating root defects from cascaded failed controls;
-- strengthening reproducible evidence packages;
+- keeping benchmark claims proportional to the available evidence;
 - evaluating additional coding-model backends.
 
-SpQE Lab is **not currently seeking external prototype specifications**. The earlier Request Kit is retained only as historical documentation.
+SpQE Lab is not running an open prototype submission campaign. A technical reviewer may nevertheless use the [Request Kit](../../request-kit/) to send a bounded SpecBlock and make an evaluation concrete. This creates no service or delivery commitment.
 
 ## Proposed next experiment
 
