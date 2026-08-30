@@ -88,13 +88,6 @@ Accordingly, the most defensible current conclusion is qualitative as well as qu
 
 No post-generation correction is included in this comparison.
 
-## Historical results
-
-Earlier Data Workspace experiments used different qualification batteries and, in some cases, post-generation correction cycles. They are historical development evidence only and are not used as the comparative result on this page.
-
-In particular, the earlier Kiro score of **223 / 235** belongs to a different qualification campaign and is not directly comparable with the present 179-control battery.
-
-Likewise, any previous SpQE result obtained after targeted local repairs is excluded from this first-shot benchmark.
 
 ## Related historical experiment
 
@@ -105,10 +98,4 @@ It documents a different development stage and must not be interpreted as the fi
 ## Evidence
 
 - [Benchmark overview](../)
-- Natural-language specification used for both generators
-- First generated Kiro prototype
-- First generated SpQE prototype
-- Shared 53-command black-box qualification battery
-- Raw Kiro execution log
-- Raw SpQE execution log
-- Machine-readable qualification reports and generated sources: publication package in preparation
+
