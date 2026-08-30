@@ -13,8 +13,18 @@ export default defineConfig({
         { slug: 'index' },
         { slug: 'foundations' },
         {
+          label: 'Comparative Benchmarks',
+          items: [
+            { slug: 'benchmarks' },
+            { slug: 'benchmarks/transaction-reconciliation' },
+            { slug: 'benchmarks/data-workspace-natural' },
+            { slug: 'benchmarks/noisedoselab' }
+          ]
+        },
+        {
           label: 'Experiments',
-          items: [            { slug: 'experiments/noisedoselab' },
+          items: [
+            { slug: 'experiments/noisedoselab' },
             { slug: 'experiments/data-workspace' },
             { slug: 'experiments/blender-spatial-relationships' },
             { slug: 'experiments/um-harness' }
@@ -34,7 +44,8 @@ export default defineConfig({
             { slug: 'request-kit/contact-dossier-form' },
             { slug: 'request-kit/prototype-request-form' },
             { slug: 'request-kit/specblock-best-practices' },
-            { slug: 'request-kit/complete-specblock-example' },          ]
+            { slug: 'request-kit/complete-specblock-example' }
+          ]
         },
         {
           label: 'About',
@@ -47,5 +58,3 @@ export default defineConfig({
     })
   ]
 });
-
-
