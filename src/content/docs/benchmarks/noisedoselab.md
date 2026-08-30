@@ -30,7 +30,7 @@ NoiseDoseLab is the most demanding benchmark in the series because it combines s
 
 ## Related historical experiment
 
-The existing [NoiseDoseLab experiment](../experiments/noisedoselab/) documents a separate qualified ARCHCode run and remains available as historical evidence. It must not be conflated with this Kiro comparison.
+The existing [NoiseDoseLab experiment](../../experiments/noisedoselab/) documents a separate qualified ARCHCode run and remains available as historical evidence. It must not be conflated with this Kiro comparison.
 
 ## Evidence
 
