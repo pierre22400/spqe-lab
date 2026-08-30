@@ -15,13 +15,13 @@ sidebar:
 
 ## Abstract
 
-This report evaluates **Data Workspace CLI (CLI) - natural spec v5**, an automatically generated ARCHCode Lab prototype for deterministic local data-workspace management.
+This report evaluates **Data Workspace CLI (CLI) - natural spec v5**, an automatically generated SpQE Lab prototype for deterministic local data-workspace management.
 
-Starting from a structured SpecBlock, ARCHCode Lab generated a multi-command Python CLI exposing workspace, source, dataset, transform, run, report, and configuration operations. The generated prototype was then subjected to an executable black-box vitrine test battery designed to verify CLI discovery, help behavior, user-error discipline, workspace-root isolation, JSON rendering, local state persistence, dry-run behavior, and representative lifecycle workflows.
+Starting from a structured SpecBlock, SpQE Lab generated a multi-command Python CLI exposing workspace, source, dataset, transform, run, report, and configuration operations. The generated prototype was then subjected to an executable black-box vitrine test battery designed to verify CLI discovery, help behavior, user-error discipline, workspace-root isolation, JSON rendering, local state persistence, dry-run behavior, and representative lifecycle workflows.
 
 The final vitrine run executed **50 black-box tests**. It produced **45 passing cases**, **5 documented prototype gaps**, and **0 hard failures**. The test run completed successfully under pytest because every remaining failure was classified as an explicit, reproducible, documented gap rather than an undocumented regression.
 
-This experiment demonstrates an important ARCHCode Lab capability: the system does not merely generate code. It also enables a public qualification narrative where strengths, runtime behavior, and prototype limitations are all captured as executable evidence.
+This experiment demonstrates an important SpQE Lab capability: the system does not merely generate code. It also enables a public qualification narrative where strengths, runtime behavior, and prototype limitations are all captured as executable evidence.
 
 ## Data Workspace CLI — Executable qualification note
 
@@ -29,7 +29,7 @@ Data Workspace CLI is a deterministic local command-line prototype for managing 
 
 The prototype is designed around local filesystem state. It exposes a subcommand-based CLI, persists JSON-backed metadata, supports deterministic text and JSON outputs, and separates read-only commands from mutating operations. It is intended to behave like a credible operational CLI at prototype scale, rather than as a simple generated command shell.
 
-This page documents an ARCHCode Lab experiment. ARCHCode Lab is an automatic prototype-generation software system: it starts from a structured specification, generates a working software prototype, produces associated user documentation, and then subjects the result to executable qualification tests.
+This page documents an SpQE Lab experiment. SpQE Lab is an automatic prototype-generation software system: it starts from a structured specification, generates a working software prototype, produces associated user documentation, and then subjects the result to executable qualification tests.
 
 Here, the Data Workspace CLI is used as a concrete case study for a broader local-state lifecycle prototype. The page follows the observed runtime behavior: generated CLI, generated user manual, black-box tests, successful workflows, defect detection, documented gaps, and final vitrine verdict.
 
@@ -84,19 +84,19 @@ Data Workspace CLI (CLI) - natural spec v5
 Local qualification context:
 
 ```text
-C:\Users\Utilisateur\Documents\mARCHCode\pytest-5942\test_phase2_preflight_acw_chec0\repo\.archcode
+C:\Users\Utilisateur\Documents\mSpQE\pytest-5942\test_phase2_preflight_acw_chec0\repo\.SpQE
 ```
 
 CLI entry point:
 
 ```text
-C:\Users\Utilisateur\Documents\mARCHCode\pytest-5942\test_phase2_preflight_acw_chec0\repo\.archcode\app\cli.py
+C:\Users\Utilisateur\Documents\mSpQE\pytest-5942\test_phase2_preflight_acw_chec0\repo\.SpQE\app\cli.py
 ```
 
 Black-box test battery:
 
 ```text
-C:\Users\Utilisateur\Documents\mARCHCode\tests\test_dataworkspace_cli_vitrine.py
+C:\Users\Utilisateur\Documents\mSpQE\tests\test_dataworkspace_cli_vitrine.py
 ```
 
 Execution command:
@@ -108,19 +108,19 @@ pytest -s tests/test_dataworkspace_cli_vitrine.py -vv -o log_cli=true --log-cli-
 Evidence directory:
 
 ```text
-C:\Users\Utilisateur\Documents\mARCHCode\pytest-5942\test_phase2_preflight_acw_chec0\repo\.archcode\.archcode\vitrine_tests\dataworkspace_cli_20260628_085900
+C:\Users\Utilisateur\Documents\mSpQE\pytest-5942\test_phase2_preflight_acw_chec0\repo\.SpQE\.SpQE\vitrine_tests\dataworkspace_cli_20260628_085900
 ```
 
 Generated evidence report:
 
 ```text
-C:\Users\Utilisateur\Documents\mARCHCode\pytest-5942\test_phase2_preflight_acw_chec0\repo\.archcode\.archcode\vitrine_tests\dataworkspace_cli_20260628_085900\dataworkspace_vitrine_test_report.md
+C:\Users\Utilisateur\Documents\mSpQE\pytest-5942\test_phase2_preflight_acw_chec0\repo\.SpQE\.SpQE\vitrine_tests\dataworkspace_cli_20260628_085900\dataworkspace_vitrine_test_report.md
 ```
 
 Generated machine-readable results:
 
 ```text
-C:\Users\Utilisateur\Documents\mARCHCode\pytest-5942\test_phase2_preflight_acw_chec0\repo\.archcode\.archcode\vitrine_tests\dataworkspace_cli_20260628_085900\dataworkspace_vitrine_test_results.json
+C:\Users\Utilisateur\Documents\mSpQE\pytest-5942\test_phase2_preflight_acw_chec0\repo\.SpQE\.SpQE\vitrine_tests\dataworkspace_cli_20260628_085900\dataworkspace_vitrine_test_results.json
 ```
 
 ## 2. Purpose of the qualification
@@ -145,7 +145,7 @@ The qualification focused on:
 * transform command behavior;
 * destructive operations and post-delete readback.
 
-The purpose of this page is not to hide defects. The purpose is to document them precisely, because ARCHCode’s value lies in making prototype behavior observable, reproducible, and auditable.
+The purpose of this page is not to hide defects. The purpose is to document them precisely, because SpQE’s value lies in making prototype behavior observable, reproducible, and auditable.
 
 ## 3. User-facing contract
 
@@ -292,7 +292,7 @@ Final vitrine verdict:
 VERDICT: PASS WITH DOCUMENTED GAPS
 ```
 
-This means the prototype is suitable for public demonstration as a documented ARCHCode-generated prototype, but it should not be presented as fully qualified in the same sense as a zero-gap scientific prototype.
+This means the prototype is suitable for public demonstration as a documented SpQE-generated prototype, but it should not be presented as fully qualified in the same sense as a zero-gap scientific prototype.
 
 ## 6. Passing surface: CLI discovery and help behavior
 
@@ -458,7 +458,7 @@ Severity assessment:
 Severity: Medium / lifecycle completeness defect
 ```
 
-This is not a catastrophic failure. It is a boundary mismatch between the documented parser surface and the orchestrator’s supported dataset actions. The defect is useful for the ARCHCode Lab vitrine because it shows that the qualification battery can detect lifecycle incompleteness after initial successful operations.
+This is not a catastrophic failure. It is a boundary mismatch between the documented parser surface and the orchestrator’s supported dataset actions. The defect is useful for the SpQE Lab vitrine because it shows that the qualification battery can detect lifecycle incompleteness after initial successful operations.
 
 ## 11. Passing workflow: configuration
 
@@ -575,7 +575,7 @@ Severity assessment:
 Severity: Medium / parameter dialect mismatch
 ```
 
-This is an important ARCHCode Lab demonstration point. The CLI help exists, the command group exists, and the error is cleanly reported, but the runtime parameter contract is internally inconsistent. The black-box test battery makes this mismatch explicit.
+This is an important SpQE Lab demonstration point. The CLI help exists, the command group exists, and the error is cleanly reported, but the runtime parameter contract is internally inconsistent. The black-box test battery makes this mismatch explicit.
 
 ## 15. Passing expected-failure behavior
 
@@ -828,13 +828,13 @@ transform preview documented gap
 transform apply dry-run documented gap
 ```
 
-## 19. Interpretation for ARCHCode
+## 19. Interpretation for SpQE
 
-Data Workspace demonstrates a different kind of ARCHCode Lab value than a fully qualified scientific prototype.
+Data Workspace demonstrates a different kind of SpQE Lab value than a fully qualified scientific prototype.
 
 The generated prototype is not perfect, but its behavior is highly inspectable. The test battery shows exactly which layers are reliable and exactly where the remaining contract gaps are located.
 
-### ARCHCode Lab produced a usable multi-command prototype
+### SpQE Lab produced a usable multi-command prototype
 
 The CLI exposes a broad operational surface:
 
@@ -877,7 +877,7 @@ The vitrine-level result is:
 0 hard failures
 ```
 
-This makes the prototype suitable for inclusion as a documented ARCHCode Lab Lab experiment, provided the page presents it honestly as a prototype with known gaps rather than a fully qualified production-equivalent tool.
+This makes the prototype suitable for inclusion as a documented SpQE Lab Lab experiment, provided the page presents it honestly as a prototype with known gaps rather than a fully qualified production-equivalent tool.
 
 ### The evidence is reusable
 
@@ -946,7 +946,7 @@ For publication purposes, the detailed per-call execution trace is intentionally
 
 ## 21. Final qualification statement
 
-Data Workspace CLI is validated as a **documented ARCHCode-generated prototype** for deterministic local data-workspace management.
+Data Workspace CLI is validated as a **documented SpQE-generated prototype** for deterministic local data-workspace management.
 
 Final state:
 
@@ -971,7 +971,7 @@ Final verdict:
 VERDICT: PASS WITH DOCUMENTED GAPS
 ```
 
-The prototype is suitable for inclusion in the ARCHCode Lab Lab showcase as a transparent demonstration of generated software, executable qualification, and documented defect discovery.
+The prototype is suitable for inclusion in the SpQE Lab Lab showcase as a transparent demonstration of generated software, executable qualification, and documented defect discovery.
 
 It should be presented as a strong prototype with known, reproducible limitations rather than as a fully qualified zero-gap prototype.
 
