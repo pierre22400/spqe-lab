@@ -57,6 +57,6 @@ SpQE Lab is not running an open prototype submission campaign. A technical revie
 
 ## Proposed next experiment
 
-Connect a Mistral coding model to the same SpQE pipeline, rerun the executable benchmarks and compare the complete generation–qualification–repair trajectory.
+Connect another coding model to the same SpQE pipeline, rerun the executable benchmarks and compare the complete generation–qualification–repair trajectory.
 
 That experiment would test the model inside a controlled engineering loop rather than evaluate isolated code completions.

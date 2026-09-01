@@ -11,6 +11,8 @@ The goal is to produce a compact, explicit, machine-readable request that can be
 
 The completed JSON object is the prototype request artifact.
 
+`technical_structure` must not be used by default. It is appropriate only when the program decomposition is itself intentional and must be supplied as part of the experiment. Before using it, read [Advanced module layout with `technical_structure`](../specblock-best-practices/#advanced-module-layout-with-technical_structure) in the SpecBlock best practices.
+
 ## Why JSON
 
 SpQE Lab expects structured prototype requests.
@@ -85,6 +87,12 @@ Optional machine context fields are allowed and must be preserved when the submi
 * `target_audience`
 * `deployment_context`
 
+One advanced top-level field is conditionally allowed:
+
+* `technical_structure`
+
+Do not use `technical_structure` in the first instance. Include it only when the submitter explicitly intends to prescribe the program decomposition and that decomposition is part of the requested experiment. Before including it, consult the SpQE SpecBlock best-practices section titled “Advanced module layout with technical_structure”.
+
 `target_audience` and `deployment_context` are optional machine fields.
 
 They may help contextualize the product expected by PASS1 when present.
@@ -97,7 +105,6 @@ If they are unknown, keep them as empty strings when they are present in the tem
 
 Do not add forbidden top-level fields such as:
 
-* `technical_structure`
 * `modules`
 * `files`
 * `commands`

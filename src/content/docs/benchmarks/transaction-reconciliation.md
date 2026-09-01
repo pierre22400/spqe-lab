@@ -13,17 +13,17 @@ A deterministic Python CLI reconciles two CSV transaction ledgers. It validates 
 | Measure | Kiro | SpQE |
 | --- | ---: | ---: |
 | Generation time | <3 min | 14 min |
-| Initial black-box score | 111 / 112 | 93 / 112* |
+| First recorded black-box score | 111 / 112 | 93 / 112* |
 | Targeted local repairs | — | 2 |
 | Final SpQE score | — | **112 / 112** |
 
-\* Initial SpQE score reported after a blocking micro-defect was removed; remaining defects were addressed by two narrow local repairs.
+\* The first recorded SpQE score was obtained after one enabling fix removed a blocking micro-defect. It is therefore not an untouched first-shot score. The remaining defects were addressed by two subsequent targeted repairs.
 
 ## Generation → qualification → repair
 
 **Generation.** Both systems received the same structured functional specification for a non-trivial reconciliation CLI: CSV validation, deterministic matching, ambiguity handling, output formats, and defined exit codes.
 
-**Initial qualification.** Kiro was nearly complete at first pass. SpQE already produced most domain logic, but a limited number of observable contract mismatches remained.
+**First recorded qualification.** Kiro was nearly complete on its first recorded run. The SpQE score was recorded only after one enabling fix removed a blocking micro-defect; at that point, most domain logic was already present but a limited number of observable contract mismatches remained.
 
 **Local repair.** Two targeted local repairs were applied to the identified defects rather than regenerating the program wholesale. This public summary does not characterize the repair step as fully autonomous.
 
@@ -31,5 +31,4 @@ A deterministic Python CLI reconciles two CSV transaction ledgers. It validates 
 
 ## Takeaway
 
-The result does not show first-pass equivalence: Kiro was substantially faster and more robust initially. It does show that SpQE’s remaining faults were local and diagnosable, while the business logic and public CLI surface were sufficiently present for full qualification after two repairs.
-
+The result does not show untouched first-shot equivalence: Kiro was substantially faster and more robust in the available initial evidence. It does show that SpQE’s remaining recorded faults were local and diagnosable, while the business logic and public CLI surface were sufficiently present for full qualification after two repairs.
