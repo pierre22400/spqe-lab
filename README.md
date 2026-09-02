@@ -1,20 +1,26 @@
 # SpQE Lab
 
-SpQE Lab is an independent applied-research project studying controlled AI software generation through explicit specifications, modular construction, executable qualification, diagnosis and targeted repair.
+SpQE Lab is an independent applied-research project studying controlled AI software generation through an explicit, specification-driven pipeline:
+
+**structured SpecBlock → architectural decomposition → module-level tasks → specialized generation agents → qualification harness → failure diagnosis → targeted repair**
+
+The project investigates whether a structured software specification can remain the reference artefact throughout modular construction, qualification and localized repair, rather than serving only as an initial prompt.
+
+Independent black-box tests are used in the published comparative experiments to evaluate the resulting prototypes from outside the generation pipeline.
 
 The public showcase is available at [pierre22400.github.io/spqe-lab](https://pierre22400.github.io/spqe-lab/).
 
 ## What this repository contains
 
-- comparative executable benchmarks between SpQE and Kiro;
-- method notes on specification-driven and family-driven generation;
-- historical qualification experiments;
-- complete SpecBlock examples and a lightweight technical Request Kit;
-- the Astro/Starlight source used to publish the showcase on GitHub Pages.
+* comparative executable benchmarks between SpQE and Kiro;
+* method notes on specification-driven and family-driven generation;
+* historical qualification experiments;
+* complete SpecBlock examples and a lightweight technical Request Kit;
+* the Astro/Starlight source used to publish the showcase on GitHub Pages.
 
 ## Current benchmark position
 
-The published evidence does not claim that SpQE is more robust than Kiro at first generation. Kiro currently produces the stronger initial result across the comparative series. SpQE nevertheless generates substantial executable domain behaviour, exposes failures through black-box controls and has demonstrated that localized defects can be closed without regenerating an entire program.
+The published evidence does not claim that SpQE is more robust than Kiro at first generation. Kiro currently produces the stronger initial result across the comparative series. SpQE nevertheless generates substantial executable domain behaviour, exposes failures through its qualification process and has demonstrated that localized defects can be closed without regenerating an entire program.
 
 The dominant observed SpQE weakness is first-shot contract consistency between generated modules. The benchmark pages distinguish untouched first-shot results, earliest recorded results obtained after an enabling fix, later targeted repairs, controls not reached and scores produced by different qualification batteries.
 
