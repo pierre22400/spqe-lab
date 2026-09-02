@@ -1,6 +1,6 @@
 ---
 title: SpQE Lab
-description: Evidence-driven software generation through executable qualification, diagnosis and targeted repair.
+description: Evidence-driven software generation through structured specification, qualification, diagnosis and targeted repair.
 template: splash
 tableOfContents: false
 editUrl: false
@@ -16,41 +16,58 @@ import {
 
 **Create quickly. Verify seriously. Learn from every run.**
 
-SpQE Lab is an independent applied-research project studying how an AI coding model can be placed inside a controlled software-production loop. The aim is not merely to generate code, but to build software, execute it, measure its observable behaviour, diagnose defects and support targeted repair.
+SpQE Lab is an independent French applied-research project, started in August 2025, studying how AI coding models can be placed inside a controlled software-production pipeline.
+
+The objective is not merely to generate code from a prompt. SpQE follows an explicit construction and qualification chain:
+
+**structured SpecBlock → architectural decomposition → module-level tasks → specialized generation agents → qualification harness → diagnosis → targeted repair**
+
+The resulting software can then be evaluated independently through external black-box tests.
 
 <CardGrid>
   <Card title="Build">
-    Turn an explicit software intent into a structured, multi-file executable prototype.
+    Turn an explicit software specification into a structured, multi-file executable prototype through modular generation.
   </Card>
 
   <Card title="Qualify">
-    Exercise the generated program through independent black-box controls and preserve the evidence.
+    Exercise the generated program through the SpQE qualification harness and preserve observable evidence about its behaviour.
   </Card>
 
   <Card title="Diagnose and repair">
-    Localize contract or integration failures, apply narrow corrections and rerun qualification.
+    Localize contract or integration failures, apply narrow corrections and rerun qualification without regenerating the entire program.
   </Card>
 </CardGrid>
 
 ## What the current experiments show
 
-Three executable comparisons against Kiro now document both strengths and limits. Kiro is currently more robust at first generation. SpQE nevertheless produces substantial domain behaviour, exposes failures through executable evidence and has demonstrated that localized defects can be closed without regenerating an entire program.
+Three executable comparisons against Kiro document both strengths and limits.
+
+SpQE produces functional end-to-end Python prototypes and exposes generation failures through executable evidence. The experiments have also demonstrated that localized defects can be diagnosed and repaired without regenerating an entire program.
+
+Independent black-box test batteries are used to evaluate SpQE and Kiro from outside their respective generation pipelines.
 
 The dominant SpQE engineering problem is now concrete: **first-shot contract consistency between generated modules**.
 
-This is a research result, not a hidden caveat. It identifies where model capability, orchestration and qualification can be measured separately.
+This is a research result, not a hidden caveat. It identifies a measurable boundary between model capability, orchestration, qualification and repair.
 
 ## Why model teams may care
 
-SpQE surrounds a coding model with explicit contracts, modular construction, observable qualification and evidence-guided repair. Replacing the model backend would make it possible to measure its effect on:
+SpQE separates several stages that are often hidden inside a single coding-agent interaction:
+
+**specification → decomposition → generation → qualification → diagnosis → repair**
+
+This makes it possible to replace the coding-model backend while keeping the surrounding pipeline and evaluation protocol as stable as possible.
+
+The effect of a model can therefore be studied on:
 
 - first-shot inter-file consistency;
 - executable contract compliance;
 - inference time and cost;
+- qualification outcomes;
 - defect localization;
 - repair trajectories.
 
-A useful next experiment is therefore direct: connect alternative coding models to the same pipeline and compare their executable benchmark and repair trajectories.
+A useful next experiment is therefore direct: connect alternative coding models to the same SpQE pipeline and compare their executable generation, qualification and repair trajectories.
 
 <div>
   <LinkButton href="./benchmarks/">
